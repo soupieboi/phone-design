@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --app-color: #0b0e11;
+  --app-color-light: #1b222b;
+  --app-color-lightest: #242e3a;
+}
+
+/* Basic styling */
+* {
+  font-family: 'Readex Pro', sans-serif;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: var(--app-color);
+  color: #FFF;
+}
+
+/*Custom Scrollbar*/
+
+*::-webkit-scrollbar {
+  font-size: 25px;
+  width: 0.8rem;
+}
+*::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgb(194, 194, 194);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*Links*/
+a {
+  cursor: pointer;
+}
+
+a:link {
+  color: rgba(255,255,255,.5); 
+  text-decoration: none;
+}
+a:hover {color:rgb(255, 255, 255)}
+a:active {color:rgb(255, 255, 255)}
+a:visited {color:rgba(255,255,255,.5)}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  align-content: center;
+  z-index: 100;
+}
+
+footer {
+  position: relative;
+  clear: both;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  height: 30rem;
+  width: calc(100% + 1rem);
+  bottom: -0.5rem;
+  left: -0.5rem;
+  display: flex;
+}
+
+.wrapper {
+  margin-top: 3rem;
+}
+
+.valtracker-logo-small {
+  width: 4rem;
+  position: relative;
+  top: -0.5rem;
+}
+
+.valtracker-logotext {
+  position: relative;
+  top: -2rem;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.logo-plus-backtotop {
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+}
+
+.navbar-span {
+  margin-right: 2rem;
+  font-size: 1.1em;
+  font-weight: 200;
+  margin-top: 0.75rem;
+  display: inline-block;
+}
+
+.about-the-project {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.about-the-project::after {
+  position: absolute;
+  content: "";
+  top: 80%;
+  left: 16.5rem;
+  width: 10rem;
+  height: 1px;
+  background: #fff1ff;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  box-shadow:
+  0 0 2.5px rgba(255, 255, 255, 0.7),
+  0 0 10px rgba(207, 207, 207, 0.7),
+  0 0 30px rgba(138, 138, 138, 0.7);
+}
+
+.about-the-project:hover::after {
+  -webkit-transform: scaleX(1.0);
+      -ms-transform: scaleX(1.0);
+          transform: scaleX(1.0);
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
+}
+
+.download-app {
+  margin-left: auto;
+}
+
+.wrapper-part {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper-part._1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapperpart-textdiv {
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 1.8em;
+  bottom: 1em;
+}
+
+.valtracker-logo-large.wrapper-part_1 {
+  margin-left: 10rem;
+  width: 30%;
+  transform: scale(0.8);
+}
+
+.downloadbutton {
+  background: linear-gradient(to right, #c80043, #b700ff);
+  border: none;
+  padding: 0.6rem;
+  border-radius: 4px;
+  color: white;
+  position: relative;
+  top: -0.52rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.downloadbutton:hover {
+  box-shadow:
+    0 0 2.5px rgba(255, 0, 85, 0.7),
+    0 0 5px rgba(255, 0, 85, 0.7),
+    0 0 20px rgba(255, 0, 85, 0.7);
+}
+
+.logo-plus-backtotop {
+  cursor: pointer;
+}
+
+.wrapperpart-textdiv._2 {
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 1em;
+  width: 50%;
+  bottom: 1em;
+}
+
+.wrapper-part._2 {
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-bottom: 10rem;
+} 
+
+.promo-img-matchview-home {
+  filter: drop-shadow(15px 15px 15px #000);
+}
+
+.wrapper-part._5 {
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-bottom: 10rem;
+}
+
+.wrapperpart-textdiv._5 {
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 1em;
+  width: 50%;
+  bottom: 1em;
+}
+
+.promo-img-playersearch {
+  filter: drop-shadow(-15px 15px 15px #000);
+  margin-right: 5rem;
+}
+
+.wrapper-part._3 {
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-bottom: 10rem;
+}
+
+.wrapperpart-textdiv._3 {
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 1em;
+  width: 50%;
+  bottom: 1em;
+}
+
+.promo-img-playersearch {
+  filter: drop-shadow(-15px 15px 15px #000);
+  margin-right: 5rem;
+}
+
+.wrapper-part._5 {
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-bottom: 10rem;
+}
+
+.wrapperpart-textdiv._5 {
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 1em;
+  width: 50%;
+  bottom: 1em;
+}
+
+.promo-img-home-featured-bundle {
+  filter: drop-shadow(15px 15px 15px #000);
+  margin-right: 5rem;
+}
+
+.wrapper-part._4 {
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-bottom: 10rem;
+}
+
+.wrapperpart-textdiv._4 {
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 1em;
+  width: 50%;
+  bottom: 1em;
+}
+
+.promo-img-favs {
+  filter: drop-shadow(-15px 15px 15px #000);
+  margin-right: 5rem;
+}
+
+.wrapper-part._6 {
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-bottom: 10rem;
+}
+
+.wrapperpart-textdiv._6 {
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-size: 1em;
+  width: 50%;
+  bottom: 1em;
+}
+
+.promo-img-bundles {
+  filter: drop-shadow(15px 15px 15px #000);
+  margin-right: 5rem;
+  width: 75%;
+}
+
+.logo-text-flexdiv {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 1.5rem;
+}
+
+.val-tracker-logospan {
+  font-size: 1.2em;
+}
+
+.footer-downloadbutton {
+  background: linear-gradient(to right, #c80043, #b700ff);
+  border: none;
+  padding: 0.6rem;
+  border-radius: 4px;
+  color: white;
+  position: relative;
+  top: -0.52rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-top: 1rem;
+  width: 75%;
+}
+
+.footer-downloadbutton:hover {
+  box-shadow:
+    0 0 1px rgba(255, 0, 85, 0.7),
+    0 0 2.5px rgba(255, 0, 85, 0.7),
+    0 0 10px rgba(255, 0, 85, 0.7);
+}
+
+.logo-and-download-footer {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.footer-flexdiv {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+}
+
+.footer-ul {
+  margin-top: 2.5rem;
+  font-size: 1.3em;
+  text-align: left;
+}
+
+.footer-ul.social-media-footer {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.footer-bottom {
+  height: 5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(32, 32, 32);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.riot-games-legal-button-footer {
+  background: grey;
+  color: #000 !important;
+  border: none;
+  padding: 0.6rem;
+  position: absolute;
+  top: 0.75rem;
+  border-radius: 4px;
+  color: white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-top: 1rem;
+  width: 20%;
+  align-self: center;
+}
+
+.riot-games-legal-button-footer:hover {
+  box-shadow:
+    0 0 1px rgba(0, 162, 255, 0.7),
+    0 0 2.5px rgba(0, 162, 255, 0.7),
+    0 0 10px rgba(0, 162, 255, 0.7);
+}
+
+.footer-bottom span {
+  margin-top: 0.25rem;
+}
+
+.footer-header {
+  color: grey;
+}
