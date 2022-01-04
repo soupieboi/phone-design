@@ -506,7 +506,9 @@ footer {
 }
 
 .footer-bottom {
-  height: 5rem;
+  height: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: absolute;
   bottom: 0;
   left: 0;
