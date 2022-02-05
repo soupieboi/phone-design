@@ -30,48 +30,38 @@
     <script src="https://kit.fontawesome.com/0fb7a47199.js" crossorigin="anonymous"></script>
   </head>
   <body>
-      <nav>
-        <div class="logo-plus-backtotop">
-          <img class="valtracker-logo-small" src="img/VALTracker_Logo.png">
-          <span class="valtracker-logotext">VALTracker.gg</span>
-        </div>
-        <div class="navbar-span download-app"><button class="downloadbutton" id="download-app">Download the Alpha</button></div>
-        <!--<span class="navbar-span about-the-dev">Web Version (Coming soon)</span>-->
-      </nav>
-     
-      <div class="background-video">
-        <video src="/img/Webvideo.mp4" muted loop autoplay></video>
+    <nav>
+      <div class="logo-plus-backtotop">
+        <img class="valtracker-logo-small" src="img/VALTracker_Logo.png">
+        <span class="valtracker-logotext">VALTracker.gg</span>
       </div>
+      <div class="navbar-span" style="margin-top: 0.2rem;"><a download="VALTracker Setup.exe" href="setup_files/VALTracker Setup.exe"><button id="download" class="download-button jq-downloadbutton" style="margin-top: 0rem;"><i class="fas fa-file-download"></i> Download</button></a></div>
+    </nav>
 
-      <footer>
-        <div class="footer-flexdiv">
-          <div class="logo-and-download-footer">
-            <div class="logo-text-flexdiv">
-              <img class="valtracker-logo-small-footer" src="img/VALTracker_Logo.png">
-              <span class="val-tracker-logospan">VALTracker</span>
-            </div>
-            <button class="footer-downloadbutton" id="download-app">Download the Alpha now!</button>
+    <div class="landing-wrapper">
+      <div class="bg-vid-wrapper">
+        <video src="./img/Wallpaper.mp4" muted loop autoplay class="bg-vid"></video>
+      </div>
+      <div class="content">
+        <div class="content-header">
+          <h1 class="page-h1">VALTracker.gg</h1>
+          <p class="content-subheader">The only VALORANT Stats Tracker you'll ever need.</p>
+          <div class="buttons">
+            <a download="VALTracker Setup.exe" href="setup_files/VALTracker Setup.exe"><button id="download" class="download-button jq-downloadbutton"><i class="fas fa-file-download"></i> Download</button></a>
+            <a href="https://github.com/spiritletsplays/valtracker_desktop"><button class="href-button"><i class="fas fa-code-branch"></i> View Source</button></a>
           </div>
-          <div class="footer-ul social-media-footer">
-            <span class="footer-header social-media-header">Social Media</span>
-            <ul>
-              <li><a href="https://twitter.com/valtracker_gg">Twitter</a></li>
-              <li><a href="https://discord.gg/aJfQ4yHysG">Our Discord</a></li>
-            </ul>
-          </div>
-          <div class="footer-ul contact-dev-footer">
-            <span class="footer-header contact-dev-header">The Dev</span>
-            <ul>
-              <li><a href="https://codedotspirit.dev/">Website</a></li>
-              <li><a href="https://discordapp.com/users/455786480795910165">Discord</a></li>
-              <li><a href="mailto:spirit@codedotspirit.dev">Mail</a></li>
-            </ul>
-          </div>
+          <span class="download-counter"><span id="download-counter-num">0</span> Downloads</span>
         </div>
-        <div class="footer-bottom">
-          <span>VALTracker was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.</span>
-        </div>
-      </footer>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-flexdiv">
+      </div>
+      <div class="footer-bottom">
+        <span>VALTracker was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.</span>
+      </div>
+    </footer>
       <script src="main.js"></script>
   </body>
 </html>

@@ -15,6 +15,9 @@ body {
   font-family: "Segoe UI", sans-serif;
   background: var(--app-color);
   color: #FFF;
+  margin: 0px; 
+  padding: 0px; 
+  overflow-x: hidden;
 }
 
 /*Custom Scrollbar*/
@@ -73,6 +76,7 @@ nav {
   -ms-flex-line-pack: center;
       align-content: center;
   z-index: 100;
+  justify-content: space-around;
 }
 
 footer {
@@ -81,17 +85,14 @@ footer {
   background-color: rgb(0, 0, 0);
   color: white;
   text-align: center;
-  height: 30rem;
+  min-height: 5rem;
   width: calc(100% + 1rem);
-  bottom: -0.5rem;
+  bottom: -3.5rem;
   left: -0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.wrapper {
-  margin-top: 3rem;
+  z-index: 2;
 }
 
 .valtracker-logo-small {
@@ -120,115 +121,6 @@ footer {
   display: inline-block;
 }
 
-.about-the-project {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.about-the-project::after {
-  position: absolute;
-  content: "";
-  top: 80%;
-  left: 16.5rem;
-  width: 10rem;
-  height: 1px;
-  background: #fff1ff;
-  -webkit-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: right;
-      -ms-transform-origin: right;
-          transform-origin: right;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  -o-transition: transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-  -webkit-box-shadow:
-  0 0 20px rgba(255, 255, 255, 0.7),
-  0 0 40px rgba(207, 207, 207, 0.7),
-  0 0 100px rgba(138, 138, 138, 0.7);
-          box-shadow:
-  0 0 20px rgba(255, 255, 255, 0.7),
-  0 0 40px rgba(207, 207, 207, 0.7),
-  0 0 100px rgba(138, 138, 138, 0.7);
-}
-
-.about-the-project:hover::after {
-  -webkit-transform: scaleX(1.0);
-      -ms-transform: scaleX(1.0);
-          transform: scaleX(1.0);
-  -webkit-transform-origin: left;
-      -ms-transform-origin: left;
-          transform-origin: left;
-}
-
-.download-app {
-  margin-left: auto;
-}
-
-.wrapper-part {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.wrapper-part._1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.wrapperpart-textdiv {
-  margin-right: auto;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 1.8em;
-  bottom: 1em;
-}
-
-.valtracker-logo-large.wrapper-part_1 {
-  margin-left: 10rem;
-  width: 30%;
-  -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-          transform: scale(0.8);
-}
-
-.downloadbutton {
-  background: -webkit-gradient(linear, left top, right top, from(#c80043), to(#b700ff));
-  background: -o-linear-gradient(left, #c80043, #b700ff);
-  background: linear-gradient(to right, #c80043, #b700ff);
-  border: none;
-  padding: 0.6rem;
-  border-radius: 4px;
-  color: white;
-  position: relative;
-  top: -0.52rem;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  font-size: 0.9em;
-}
-
 .downloadbutton:hover {
   -webkit-box-shadow:
     0 0 2.5px rgba(255, 0, 85, 0.7),
@@ -242,179 +134,6 @@ footer {
 
 .logo-plus-backtotop {
   cursor: pointer;
-}
-
-.wrapperpart-textdiv._2 {
-  margin-right: auto;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 1em;
-  width: 50%;
-  bottom: 1em;
-}
-
-.wrapper-part._2 {
-  margin-left: 12rem;
-  margin-right: 12rem;
-  margin-bottom: 10rem;
-} 
-
-.promo-img-matchview-home {
-  -webkit-filter: drop-shadow(15px 15px 15px #000);
-          filter: drop-shadow(15px 15px 15px #000);
-}
-
-.wrapper-part._5 {
-  margin-left: 12rem;
-  margin-right: 12rem;
-  margin-bottom: 10rem;
-}
-
-.wrapperpart-textdiv._5 {
-  margin-right: auto;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 1em;
-  width: 50%;
-  bottom: 1em;
-}
-
-.promo-img-playersearch {
-  -webkit-filter: drop-shadow(-15px 15px 15px #000);
-          filter: drop-shadow(-15px 15px 15px #000);
-  margin-right: 5rem;
-}
-
-.wrapper-part._3 {
-  margin-left: 12rem;
-  margin-right: 12rem;
-  margin-bottom: 10rem;
-}
-
-.wrapperpart-textdiv._3 {
-  margin-right: auto;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 1em;
-  width: 50%;
-  bottom: 1em;
-}
-
-.promo-img-playersearch {
-  -webkit-filter: drop-shadow(-15px 15px 15px #000);
-          filter: drop-shadow(-15px 15px 15px #000);
-  margin-right: 5rem;
-}
-
-.wrapper-part._5 {
-  margin-left: 12rem;
-  margin-right: 12rem;
-  margin-bottom: 10rem;
-}
-
-.wrapperpart-textdiv._5 {
-  margin-right: auto;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 1em;
-  width: 50%;
-  bottom: 1em;
-}
-
-.promo-img-home-featured-bundle {
-  -webkit-filter: drop-shadow(15px 15px 15px #000);
-          filter: drop-shadow(15px 15px 15px #000);
-  margin-right: 5rem;
-}
-
-.wrapper-part._4 {
-  margin-left: 12rem;
-  margin-right: 12rem;
-  margin-bottom: 10rem;
-}
-
-.wrapperpart-textdiv._4 {
-  margin-right: auto;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 1em;
-  width: 50%;
-  bottom: 1em;
-}
-
-.promo-img-favs {
-  -webkit-filter: drop-shadow(-15px 15px 15px #000);
-          filter: drop-shadow(-15px 15px 15px #000);
-  margin-right: 5rem;
-}
-
-.wrapper-part._6 {
-  margin-left: 12rem;
-  margin-right: 12rem;
-  margin-bottom: 10rem;
-}
-
-.wrapperpart-textdiv._6 {
-  margin-right: auto;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 1em;
-  width: 50%;
-  bottom: 1em;
 }
 
 .promo-img-bundles {
@@ -442,33 +161,13 @@ footer {
 }
 
 .footer-downloadbutton {
-  background: -webkit-gradient(linear, left top, right top, from(#c80043), to(#b700ff));
-  background: -o-linear-gradient(left, #c80043, #b700ff);
-  background: linear-gradient(to right, #c80043, #b700ff);
+  background: #c80043;
   border: none;
   padding: 0.6rem;
-  border-radius: 4px;
-  color: white;
-  position: relative;
+  margin-top: 1rem;
   top: -0.52rem;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  font-size: 0.9em;
   margin-top: 1rem;
   width: 75%;
-}
-
-.footer-downloadbutton:hover {
-  -webkit-box-shadow:
-    0 0 1px rgba(255, 0, 85, 0.7),
-    0 0 2.5px rgba(255, 0, 85, 0.7),
-    0 0 10px rgba(255, 0, 85, 0.7);
-          box-shadow:
-    0 0 1px rgba(255, 0, 85, 0.7),
-    0 0 2.5px rgba(255, 0, 85, 0.7),
-    0 0 10px rgba(255, 0, 85, 0.7);
 }
 
 .logo-and-download-footer {
@@ -481,6 +180,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 2rem;
+  text-align: center;
 }
 
 .footer-flexdiv {
@@ -555,225 +255,123 @@ footer {
     0 0 10px rgba(0, 162, 255, 0.7);
 }
 
-.footer-bottom span {
-  margin-top: 0.25rem;
+.background-video-wapper {
+  width: 100%;
+  position: relative;
+  top: -6rem;
+  left: 0;
+  background: rgb(255, 255, 255);
+  z-index: 2;
 }
 
-.footer-header {
+.bg-vid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -10rem;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.bg-vid-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #000;
+}
+
+.bg-vid-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.background-video-overlay {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  top: -6rem;
+  left: 0;
+  z-index: 3;
+}
+
+.landing-wrapper {
+  position: relative;
+  top: 3rem;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-header {
+  margin-top: 10rem;
+  font-size: 1.5em;
+  margin-bottom: 50rem;
+  width: 90%;
+}
+
+.page-h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+button {
+  border-radius: 4px;
+  color: white;
+  position: relative;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+button:hover {
+  background: #8f0030;
+}
+
+.download-button {
+  background: #c80043;
+  border: none;
+  padding: 0.6rem;
+  margin-top: 1rem;
+  width: 12rem;
+}
+
+.href-button {
+  background: none;
+  border: 2px solid grey;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  width: 12rem;
+}
+
+.download-button:hover {
+  background: #8f0030;
+}
+
+.href-button:hover {
+  border: 2px solid rgb(212, 212, 212);
+  background: none;
+}
+
+.download-counter {
   color: grey;
+  margin-top: 0.5rem;
+  font-size: 0.8em;
 }
 
-@media screen and (max-width: 1600px) {
-  .wrapper {
-    position: relative;
-    left: -8rem;
-  }
-  .wrapper-part {
-    width: 85%;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .wrapper {
-    position: relative;
-    left: -8rem;
-    width: 108%;
-  }
-}
-
-@media screen and (max-width: 1140px) {
-  .wrapper {
-    position: relative;
-    left: -8rem;
-    width: 108%;
-  }
-  .promo-img-favs {
-    margin-right: 0;
-  }
-  .wrapper-part {
-    margin-left: 0;
-    margin-right: 0;
-    width: 85%;
-  }
-  .promo-img-matchview-home {
-    -webkit-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-
-  .promo-img-home-featured-bundle {
-    -webkit-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-            transform: scale(0.7);
-    width: 120%;
-  }
-
-  .promo-img-favs {
-    -webkit-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-  .wrapper-part._4 {
-    margin-left: 4rem;
-    margin-right: 2rem;
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 990px) {
-  #promo-img {
-    -webkit-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-  .promo-img-bundles {
-    -webkit-transform: scale(0.9) !important;
-        -ms-transform: scale(0.9) !important;
-            transform: scale(0.9) !important;
-  }
-}
-
-@media screen and (max-width: 930px) {
-  #promo-img {
-    -webkit-transform: scale(0.6);
-        -ms-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-  .promo-img-bundles {
-    -webkit-transform: scale(0.8) !important;
-        -ms-transform: scale(0.8) !important;
-            transform: scale(0.8) !important;
-  }
-  .wrapper-part._4 {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 870px) {
-  #promo-img {
-    display: none;
-  }
-  .wrapper {
-    position: relative;
-    left: -6rem;
-    width: 100%;
-  }
-  .wrapper-part._4 {
-    margin-left: 12rem;
-    width: 60%;
-  }
-  .wrapper-part {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 1060px) {
-  .valtracker-logo-large.wrapper-part_1 {
-    width: 18rem;
-    height: 18rem;
-  }
-}
-@media screen and (max-width: 780px) {
-  .wrapper-part._1 {
-    position: relative;
-    left: -5rem;
-  }
-  .footer-downloadbutton {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 638px){
-  .logo-plus-backtotop {
-    margin-left: 0;
-    margin-right: 10px;
-  }
-  .navbar-span {
-    margin-right: 10px;
-  }
-  .wrapperpart-textdiv {
-    width: 100% !important;
-    margin: 0 !important;
-  }
-  .wrapper {
-    font-size: 0.7em;
-  }
-  .navbar-span.about-the-project {
-    display: none;
-  }
-  .footer-downloadbutton {
-    width: 120%;
-  }
-  footer {
-    font-size: 0.7em;
-  }
-  .footer-flexdiv {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer-ul.social-media-footer {
-    margin-left: 2rem;
-  }
-  .footer-ul {
-    margin-left: 2rem;
-  }
-  .logo-and-download-footer {
-    width: 50%;
-  }
-  #download-app {
-    display: none;
-  }
-  .wrapper-part._1 {
-    font-size: 0.7em;
-  }
-  .valtracker-logo-large.wrapper-part_1 {
-    width: 10rem;
-    height: 10rem;
-  }
-}
-
-@media screen and (max-width: 424px) {
-  .wrapper-part {
-    margin-left: 1rem;
-  }
-  .wrapper-part._2 {
-    margin-left: 8rem;
-    margin-bottom: 2rem;
-  }
-  .wrapper-part._3 {
-    margin-left: 8rem;
-    margin-bottom: 2rem;
-  }
-  .wrapper-part._4 {
-    margin-left: 8rem;
-    margin-bottom: 2rem;
-  }
-  .wrapper-part._5 {
-    margin-left: 8rem;
-    margin-bottom: 2rem;
-  }
-  .wrapper-part._6 {
-    margin-left: 8rem;
-    margin-bottom: 2rem;
-  }
-}
-
-@media screen and (min-width: 2400px) {
-  .logo-and-download-footer {
-    position: relative;
-    top: -3rem;
-  }
-}
-
-@media screen and (min-width: 2850px) {
-  .logo-and-download-footer {
-    position: relative;
-    top: -5rem;
-  }
-  footer {
-    height: 38rem;
-  }
+.download-counter-num {
+  color: rgb(185, 185, 185);
+  font-weight: bold;
 }
