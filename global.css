@@ -563,3 +563,69 @@ button:hover {
   font-size: initial;
   padding: 1rem;
 }
+
+@media only screen and (max-width: 1334px) {
+  .promo-collection {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .promo-tile-img-wrapper {
+    display: none;
+  }
+  .promo-tile-text-wrapper {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .promo-card-small {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+  .promo-line {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .promo-card-wide {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .download-button {
+    display: none;
+  }
+  .logo-plus-backtotop {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content-header {
+    font-size: 1.1em;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+  .promo-wrapper-header {
+    font-size: 1.7em;
+  }
+  .promo-wrapper-header.much-more {
+    font-size: 1.7em !important;
+  }
+}
+
+@media only screen and (min-width: 2100px) {
+  .promo-tiles-wrapper {
+    min-width: 50%;
+    width: 50%;
+  }
+}
