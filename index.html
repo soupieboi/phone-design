@@ -30,87 +30,103 @@
     <script src="https://kit.fontawesome.com/0fb7a47199.js" crossorigin="anonymous"></script>
   </head>
   <body>
-      <nav>
-        <div class="logo-plus-backtotop">
-          <img class="valtracker-logo-small" src="img/VALTracker_Logo.png">
-          <span class="valtracker-logotext">VALTracker.gg</span>
-        </div>
-        <div class="navbar-span download-app"><button class="downloadbutton" id="download-app">Download the Alpha</button></div>
-        <!--<span class="navbar-span about-the-dev">Web Version (Coming soon)</span>-->
-      </nav>
-      <div class="wrapper">
-        <div class="wrapper-part _1">
-          <img src="img/VALTracker_Logo.png" class="valtracker-logo-large wrapper-part_1">
-          <div class="wrapperpart-textdiv">
-            <h1 class="wrapperpart-header">VALTracker</h1>
-            <span class="wrapperpart-subtext">The only VALORANT Stats Tracker you will ever need.</span>
+
+    <nav>
+      <div class="logo-plus-backtotop">
+        <img class="valtracker-logo-small" src="img/VALTracker_Logo.png">
+        <span class="valtracker-logotext">VALTracker.gg</span>
+      </div>
+      <div class="navbar-span" style="margin-top: 0.2rem;"><a download="VALTracker Setup.exe" href="setup_files/VALTracker Setup.exe"><button id="download" class="download-button jq-downloadbutton" style="margin-top: 0rem;"><i class="fas fa-file-download"></i> Download</button></a></div>
+    </nav>
+
+    <div class="landing-wrapper">
+      <div class="bg-vid-wrapper">
+        <video src="./img/Wallpaper.mp4" muted loop autoplay class="bg-vid"></video>
+      </div>
+      <div class="content">
+        <div class="content-header">
+          <h1 class="page-h1">VALTracker.gg</h1>
+          <p class="content-subheader">The only VALORANT Stats Tracker you'll ever need.<br> Download now - it's free.</p>
+          <div class="buttons">
+            <a download="VALTracker Setup.exe" href="setup_files/VALTracker Setup.exe"><button id="download" class="download-button jq-downloadbutton"><i class="fas fa-file-download"></i> Download</button></a>
+            <a href="https://github.com/spiritletsplays/valtracker_desktop" target="_blank"><button class="href-button"><i class="fas fa-code-branch"></i> View Source</button></a>
           </div>
+          <span class="download-counter"><span id="download-counter-num">0</span> Downloads</span>
         </div>
-        <div class="wrapper-part _2">
-          <div class="wrapperpart-textdiv _2">
-            <h1>Get Feedback on your last Matches in Seconds!</h1>
-            <span>All of your Matches appear in-app after playing, so you can review them without even having to start the Game!</span>
+        <div class="scroll-down-info-wrapper">
+          <div class="scroll-down-info">
+            <span>Or scroll down to learn more!</span>
+            <i class="fas fa-arrow-down"></i>
           </div>
-          <img src="img/promoimg_2_home_matchview_favs_rotated.png" class="promo-img-matchview-home" id="promo-img">
-        </div>
-        <div class="wrapper-part _5">
-          <img src="img/promoimg_5_playersearch_rotater.png" class="promo-img-playersearch" id="promo-img">
-          <div class="wrapperpart-textdiv _5">
-            <h1>Search for other Players Matches!</h1>
-            <span>Search for other players and look at their statistics too!</span>
-          </div>
-        </div>
-        <div class="wrapper-part _3">
-          <div class="wrapperpart-textdiv _3">
-            <h1>The current Bundle and latest News, <br>right at your Fingertips!</h1>
-            <span>Find the News directly from the Website, as well as the Featured Bundle and a Countdown for it on the in-app Homepage.</span>
-          </div>
-          <img src="img/promoimg_4_home_bundle_rotated.png" class="promo-img-home-featured-bundle" id="promo-img">
-        </div>
-        <div class="wrapper-part _4">
-          <img src="img/promoimg_2_home_matchview_favs_rotated_favpromo.png" class="promo-img-favs" id="promo-img">
-          <div class="wrapperpart-textdiv _4">
-            <h1>Don't want to lose your best matches?</h1>
-            <span>Set Matches as Favorites and access them anytime you want! <br>We don't want to risk losing your 40 Bomb that one game.</span>
-          </div>
-        </div>
-        <div class="wrapper-part _6">
-          <div class="wrapperpart-textdiv _6">
-            <h1>Look up your Favorite Skins!</h1>
-            <span>VALTracker provides you with a complete and always up-to-date collection of every Collectable in the Game!</span>
-          </div>
-          <img src="img/promoimg_6_bundles_rotated.png" class="promo-img-bundles" id="promo-img">
         </div>
       </div>
-      <footer>
-        <div class="footer-flexdiv">
-          <div class="logo-and-download-footer">
-            <div class="logo-text-flexdiv">
-              <img class="valtracker-logo-small-footer" src="img/VALTracker_Logo.png">
-              <span class="val-tracker-logospan">VALTracker</span>
-            </div>
-            <button class="footer-downloadbutton" id="download-app">Download the Alpha now!</button>
+    </div>
+
+    <div class="promo-wrapper">
+      <h1 class="promo-wrapper-header">FEATURES</h1>
+      <div class="promo-tiles-wrapper">
+        <div class="promo-tile-section">
+          <div class="promo-tile-img-wrapper">
+            <img class="promo-tile-img matches" src="./img/matches_promo.png">
           </div>
-          <div class="footer-ul social-media-footer">
-            <span class="footer-header social-media-header">Social Media</span>
-            <ul>
-              <li><a href="https://twitter.com/valtracker_gg">Twitter</a></li>
-              <li><a href="https://discord.gg/aJfQ4yHysG">Our Discord</a></li>
-            </ul>
-          </div>
-          <div class="footer-ul contact-dev-footer">
-            <span class="footer-header contact-dev-header">The Dev</span>
-            <ul>
-              <li><a href="https://codedotspirit.dev/">Website</a></li>
-              <li><a href="https://discordapp.com/users/455786480795910165">Discord</a></li>
-              <li><a href="mailto:spirit@codedotspirit.dev">Mail</a></li>
-            </ul>
+          <div class="promo-tile-text-wrapper">
+            <h1>Get info on your latest matches!</h1>
+            <p>See Statistics like Ability usage, KDA, Damage per round and many more with just a few Clicks!</p>
           </div>
         </div>
-        <div class="footer-bottom">
-          <span>VALTracker was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.</span>
+        <hr class="promo-tile-seperator">
+        <div class="promo-tile-section">
+          <div class="promo-tile-img-wrapper">
+            <img class="promo-tile-img playersearch" src="./img/playersearch_promo.png">
+          </div>
+          <div class="promo-tile-text-wrapper">
+            <h1>Search for any players matches!</h1>
+            <p>Search for any player in any region and get information on their matches!</p>
+          </div>
         </div>
-      </footer>
-      <script src="main.js"></script>
+      </div>
+      <h1 class="promo-wrapper-header much-more" style="font-size: 2.5em; margin-bottom: 2rem;">AND MUCH MORE</h1>
+      <div class="promo-collection">
+        <div class="promo-line">
+          <div class="promo-card-small">
+            <h1><i class="fas fa-home" id="promocard-icon"></i> Personal Hub</h1>
+            <p>Just launch the app and see the most important stats!</p>
+          </div>
+          <div class="promo-card-small">
+            <h1><i class="fas fa-palette" id="promocard-icon"></i> Custom Themes</h1>
+            <p>VALTracker comes with a built-in Theme Creator for you to create your own colorful themes!</p>
+          </div>
+        </div>
+        <div class="promo-line">
+          <div class="promo-card-small">
+            <h1><i class="fas fa-star" id="promocard-icon"></i> Favorite Matches</h1>
+            <p>Save any of your matches to access them at any time!</p>
+          </div>
+          <div class="promo-card-small">
+            <h1><i class="fas fa-info" id="promocard-icon"></i> Info on collectables</h1>
+            <p>Get Info on any Skin, Bundle or even Card within the app!</p>
+          </div>
+        </div>
+        <div class="promo-card-wide">
+          <h1><i class="fab fa-discord" style="color: #5b71c0; filter: drop-shadow(0px 0px 10px #000000);"></i> Discord Server</h1>
+          <p>Connect with the Developer and other users by joining our Discord Community!</p>
+          <button class="discord-href">Join now!</button>
+        </div>
+      </div>
+
+      <div class="bottom-content">
+        <h1>Did we convince you?</h1>
+        <p>Download VALTracker now. It's free.</p>
+        <a download="VALTracker Setup.exe" href="setup_files/VALTracker Setup.exe"><button id="download" class="download-button bottom-button"><i class="fas fa-file-download"></i> Download</button></a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-bottom">
+        <span>VALTracker was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.</span>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
