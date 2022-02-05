@@ -70,7 +70,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 3rem;
+  height: 4rem;
   background-color: rgb(0, 0, 0);
   color: white;
   -ms-flex-line-pack: center;
@@ -82,7 +82,6 @@ nav {
 footer {
   position: relative;
   clear: both;
-  background-color: rgb(0, 0, 0);
   color: white;
   text-align: center;
   min-height: 5rem;
@@ -109,8 +108,13 @@ footer {
 }
 
 .logo-plus-backtotop {
+  position: relative;
   margin-left: 0.5rem;
   margin-right: 2rem;
+  top: 0.4rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
 }
 
 .navbar-span {
@@ -119,6 +123,8 @@ footer {
   font-weight: 200;
   margin-top: 0.75rem;
   display: inline-block;
+  position: relative;
+  top: 0.5rem;
 }
 
 .downloadbutton:hover {
@@ -130,10 +136,6 @@ footer {
     0 0 2.5px rgba(255, 0, 85, 0.7),
     0 0 5px rgba(255, 0, 85, 0.7),
     0 0 20px rgba(255, 0, 85, 0.7);
-}
-
-.logo-plus-backtotop {
-  cursor: pointer;
 }
 
 .promo-img-bundles {
@@ -207,8 +209,8 @@ footer {
 
 .footer-bottom {
   height: fit-content;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -374,4 +376,190 @@ button:hover {
 .download-counter-num {
   color: rgb(185, 185, 185);
   font-weight: bold;
+}
+
+.promo-wrapper {
+  width: 100%;
+  background: var(--app-color);
+  position: relative;
+  z-index: 3;
+  top: -18rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-tiles-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 70%;
+  width: 70%;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: var(--app-color-light);
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promo-tile-section {
+  display: flex;
+  flex-direction: row;
+  height: 15rem;
+}
+
+.promo-tile-seperator {
+  width: 90%;
+  height: 1px;
+  background: linear-gradient(to right, #c80043, #ff006a);
+  border: none;
+  margin-top: 1.5rem;
+}
+
+.promo-tile-text-wrapper {
+  margin-left: 2.5rem;
+  width: 50%;
+  margin-right: 8rem;
+}
+
+.promo-tile-img-wrapper {
+  width: 50%;
+  background-color: var(--app-color-lightest);
+  border-radius: 4px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.promo-tile-img {
+  background-color: var(--app-color);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 1px solid grey;
+  filter: drop-shadow(0px 0px 10px #000000);
+}
+
+.promo-wrapper-header {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.scroll-down-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scroll-down-info span {
+  color: rgb(100, 100, 100);
+}
+
+.scroll-down-info i {
+  color: rgb(100, 100, 100);
+  background: linear-gradient(to bottom, #c80043, #ff00bf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.scroll-down-info-wrapper {
+  position: absolute;
+  margin-top: 24%;
+  width: 100%;
+  display: flex;
+  z-index: 6;
+}
+
+.promo-collection {
+  padding: 1rem;
+  border-radius: 4px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--app-color-light);
+}
+
+.promo-line {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.promo-card-small {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  width: 50%;
+  height: 10rem;
+  background-color: var(--app-color-lightest);
+  text-align: center;
+}
+
+.promo-card-wide {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  height: 10rem;
+  background-color: var(--app-color-lightest);
+  text-align: center;
+}
+
+.promo-card-small p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.promo-card-small h1 {
+  margin-top: 0.5rem; 
+  margin-bottom: 0.5rem;
+}
+
+.promo-card-wide h1 {
+  margin-top: 0.5rem; 
+  margin-bottom: 0.5rem;
+}
+
+#promocard-icon {
+  color: #ff0055;
+  font-size: 0.8em;
+  filter: drop-shadow(0px 0px 10px #000000);
+}
+
+.discord-href {
+  background: none;
+  border: 2px solid grey;
+  padding: 0.49rem;
+  margin-bottom: 1rem;
+  width: 12rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.discord-href:hover {
+  border: 2px solid #5b71c0;
+  background: none;
+}
+
+.bottom-content:not(button) {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.bottom-content h1 {
+  margin-bottom: 0.1rem;
+}
+
+.bottom-content button {
+  font-size: initial;
+  padding: 1rem;
 }
