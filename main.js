@@ -12,7 +12,7 @@ function animateValue(obj, start, end, duration) {
 }
 $(document).ready(() => {
     $.ajax({
-        url: `https://api.countapi.xyz/info/valtracker.gg/something`,
+        url: `https://api.countapi.xyz/info/valtracker.gg/download`,
         type: 'get',
         success: function(data, jqXHR) {
             var num = data.value
@@ -25,7 +25,7 @@ $(document).ready(() => {
     });
     $('.jq-downloadbutton').on("click", function() {
         $.ajax({
-            url: `https://api.countapi.xyz/hit/valtracker.gg/something`,
+            url: `https://api.countapi.xyz/hit/valtracker.gg/download`,
             type: 'get',
             success: function(data, jqXHR) {
                 var num = data.value
@@ -35,6 +35,4 @@ $(document).ready(() => {
             }
         });
     });
-})
-
-//https://api.countapi.xyz/hit/namespace/key
+});
