@@ -10,6 +10,9 @@ function animateValue(obj, start, end, duration) {
     };
     window.requestAnimationFrame(step);
 }
+function hitCountAPI() {
+    
+}
 $(document).ready(() => {
     $.ajax({
         url: `https://api.countapi.xyz/info/valtracker.gg/download`,
@@ -23,7 +26,8 @@ $(document).ready(() => {
     $('.logo-plus-backtotop').on("click", function() {
         $('html').animate({ scrollTop: 0 }, 600);
     });
-    $('.jq-downloadbutton').on("click", function() {
+    $('.jq-downloadbutton').on("click", function(e) {
+        e.preventDefault();
         $.ajax({
             url: `https://api.countapi.xyz/hit/valtracker.gg/download`,
             type: 'get',
@@ -32,7 +36,11 @@ $(document).ready(() => {
                 const obj = document.getElementById("download-counter-num");
                 obj.textContent = num
                 animateValue(obj, obj.textContent, num, 3000);
+                $('#hidden-download')[0].click()
             }
         });
+    });
+    $('#hidden-download').on("click", function() {
+        console.log("E")
     });
 });
