@@ -10,10 +10,8 @@ function animateValue(obj, start, end, duration) {
     };
     window.requestAnimationFrame(step);
 }
-function hitCountAPI() {
-    
-}
 $(document).ready(() => {
+    localStorage.setItem('firstTimeDownload', true);
     $.ajax({
         url: `https://api.countapi.xyz/info/valtracker.gg/download`,
         type: 'get',
@@ -28,19 +26,20 @@ $(document).ready(() => {
     });
     $('.jq-downloadbutton').on("click", function(e) {
         e.preventDefault();
-        $.ajax({
-            url: `https://api.countapi.xyz/hit/valtracker.gg/download`,
-            type: 'get',
-            success: function(data, jqXHR) {
-                var num = data.value
-                const obj = document.getElementById("download-counter-num");
-                obj.textContent = num
-                animateValue(obj, obj.textContent, num, 3000);
-                $('#hidden-download')[0].click()
-            }
-        });
-    });
-    $('#hidden-download').on("click", function() {
-        console.log("E")
+        if(localStorage.getItem('firstTimeDownload') == true) {
+            $.ajax({
+                url: `https://api.countapi.xyz/hit/valtracker.gg/download`,
+                type: 'get',
+                success: function(data, jqXHR) {
+                    var num = data.value
+                    const obj = document.getElementById("download-counter-num");
+                    obj.textContent = num
+                    animateValue(obj, obj.textContent, num, 3000);
+                    localStorage.setItem('firstTimeDownload', false);
+                }
+            });
+        } else {
+            $('#hidden-download')[0].click();
+        }
     });
 });
