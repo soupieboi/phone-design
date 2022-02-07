@@ -602,6 +602,12 @@ button:hover {
     height: auto;
     width: 100%;
   }
+  .promo-card-wide p {
+    width: 90%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (max-width: 520px) {
