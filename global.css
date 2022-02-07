@@ -601,6 +601,7 @@ button:hover {
   .promo-card-wide {
     height: auto;
     width: 100%;
+    margin: 0;
   }
   .promo-card-wide p {
     width: 90%;
