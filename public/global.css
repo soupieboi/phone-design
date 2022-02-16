@@ -383,7 +383,7 @@ button:hover {
   background: var(--app-color);
   position: relative;
   z-index: 3;
-  top: -18rem;
+  top: -19rem;
   display: flex;
   flex-direction: column;
 }
@@ -583,6 +583,9 @@ button:hover {
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .promo-tile-section {
+    height: auto;
   }
 }
 
