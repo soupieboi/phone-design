@@ -18,7 +18,6 @@ $(document).ready(() => {
     const obj = document.getElementById("download-counter-num");
     animateValue(obj, 0, num, 3000);
 
-    console.log(parseInt(num) + 1)
     $('.logo-plus-backtotop').on("click", function() {
         $('html').animate({ scrollTop: 0 }, 600);
     });

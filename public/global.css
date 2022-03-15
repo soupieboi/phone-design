@@ -502,6 +502,7 @@ button:hover {
 }
 
 .promo-card-wide {
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   margin-left: 0.5rem;
@@ -535,7 +536,7 @@ button:hover {
   top: -2px;
 }
 
-.discord-href {
+.discord-href, .api-href {
   background: none;
   border: 2px solid grey;
   padding: 0.49rem;
@@ -547,6 +548,11 @@ button:hover {
 
 .discord-href:hover {
   border: 2px solid #5b71c0;
+  background: none;
+}
+
+.api-href:hover {
+  border: 2px solid #db2777;
   background: none;
 }
 
@@ -605,6 +611,7 @@ button:hover {
     height: auto;
     width: 100%;
     margin: 0;
+    margin-bottom: 1rem;
   }
   .promo-card-wide p {
     width: 90%;
