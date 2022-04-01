@@ -8,11 +8,10 @@ const port = 3000
 app.use(express.static('public'));
 app.engine('html', require('ejs').renderFile); 
 
-
 function fetchDownloads() {
   var dwds;
   var downloadURL;
-  const gh = new GithubStats('SpiritLetsPlays', 'VALTracker_desktop');
+  const gh = new GithubStats('VALTracker', 'DesktopClient');
   gh.getTotalDownloads().then(count => {
     gh.getLatestRelease().then(data => {
       for(var i = 0; i < data.assets.length; i++) {
@@ -39,7 +38,7 @@ setInterval(fetchDownloads, 1.2e+6);
 
 app.get('/', async function(req, res) {
   var raw = fs.readFileSync('./json/downloads.json');
-  var data = JSON.parse(raw)
+  var data = JSON.parse(raw);
   res.render('index.html', {downloads: data.downloads, downloadURL: data.downloadURL});
 })
 

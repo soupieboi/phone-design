@@ -10,6 +10,7 @@ function animateValue(obj, start, end, duration) {
     };
     window.requestAnimationFrame(step);
 }
+
 $(document).ready(() => {
     var downloadURL = $('#hidden-downloadurl').text();
     $('#hidden-download').attr('href', downloadURL);

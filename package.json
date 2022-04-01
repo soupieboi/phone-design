@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SpiritLetsPlays/VALTracker_website.git"
+    "url": "git+https://github.com/VALTracker/Website.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SpiritLetsPlays/VALTracker_website/issues"
+    "url": "https://github.com/VALTracker/Website/issues"
   },
   "homepage": "https://valtracker.gg",
   "dependencies": {
