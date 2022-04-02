@@ -352,7 +352,7 @@ button:hover {
 
 .href-button {
   background: none;
-  border: 2px solid rgba(47, 53, 77, 0.9);
+  border: 2px solid grey;
   padding: 0.49rem;
   margin-top: 1rem;
   width: 12rem;
@@ -368,7 +368,7 @@ button:hover {
 }
 
 .download-counter {
-  color: rgba(47, 53, 77, 0.9);
+  color: grey;
   margin-top: 0.5rem;
   font-size: 0.8em;
 }
@@ -392,8 +392,8 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 70%;
-  width: 70%;
+  min-width: 75%;
+  width: 75%;
   margin-top: 2rem;
   padding-bottom: 1rem;
   background-color: var(--app-color-light);
@@ -419,7 +419,7 @@ button:hover {
 .promo-tile-text-wrapper {
   margin-left: 2.5rem;
   width: 50%;
-  margin-right: 8rem;
+  margin-right: 4rem;
 }
 
 .promo-tile-img-wrapper {
@@ -438,6 +438,10 @@ button:hover {
   border-radius: 4px;
   border: 1px solid rgba(47, 53, 77, 0.9);
   filter: drop-shadow(0px 0px 10px #000000);
+}
+
+.promo-tile-img.matches, .promo-tile-img.shop, .promo-tile-img.discord-status {
+  object-position: 0;
 }
 
 .promo-wrapper-header {
@@ -538,7 +542,7 @@ button:hover {
 
 .discord-href, .api-href {
   background: none;
-  border: 2px solid rgba(47, 53, 77, 0.9);
+  border: 2px solid grey;
   padding: 0.49rem;
   margin-bottom: 1rem;
   width: 12rem;
@@ -662,4 +666,14 @@ button:hover {
 
 #hidden-downloadurl {
   display: none;
+}
+
+.promo-tile-preview-wrapper {
+  width: 50%;
+  background-color: var(--app-color-lightest);
+  border-radius: 4px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  border: 1px solid rgba(47, 53, 77, 0.9);
+  filter: drop-shadow(0px 0px 10px #000000);
 }
