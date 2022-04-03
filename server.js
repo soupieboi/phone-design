@@ -42,6 +42,10 @@ app.get('/', async function(req, res) {
   res.render('index.html', {downloads: data.downloads, downloadURL: data.downloadURL});
 })
 
+app.get('/privacy', async function(req, res) {
+  res.render('privacy.html');
+})
+
 app.get('/riot.txt', (req, res) => {
   res.sendFile(path.join(__dirname, '/riot.txt'));
 })

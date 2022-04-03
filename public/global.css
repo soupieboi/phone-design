@@ -677,3 +677,19 @@ button:hover {
   border: 1px solid rgba(47, 53, 77, 0.9);
   filter: drop-shadow(0px 0px 10px #000000);
 }
+
+.privacy-content {
+  min-height: 95vh;
+  width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.href-link {
+  color: #7a5365 !important;
+  transition: all 0.2s ease;
+}
+
+.href-link:hover {
+  color: #ff0077 !important;
+}
