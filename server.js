@@ -24,9 +24,7 @@ function fetchDownloads() {
         "downloads": dwds,
         "downloadURL": downloadURL
       }
-      console.log(downloadData)
       fs.writeFileSync('./json/downloads.json', JSON.stringify(downloadData));
-      console.log("Fetched data successfully!");
     })
   }).catch(error => {
     console.error(error);
