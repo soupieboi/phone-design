@@ -15,7 +15,7 @@ export async function getServerSideProps({ req, res }) {
     'public, s-maxage=600, stale-while-revalidate=610'
   )
 
-  const gh = new GithubStats('VALTracker', 'DesktopClient', process.env.GH_TOKEN);
+  const gh = new GithubStats('VALTracker', 'DesktopClient', process.env.GIT_TOKEN);
   var data = await gh.getTotalDownloads();
 
   var val_version = (await(await fetch('https://api.valtracker.gg/all-versions/latest')).json()).data;
@@ -224,7 +224,7 @@ export default function Home({ downloadCount, downloadURL }) {
         </div>
         <footer>
           
-          <div class="footer-bottom p-4 bg-maincolor-lightest w-full flex flex-row justify-center items-center h-fit base:h-20 text-center">
+          <div className="footer-bottom p-4 bg-maincolor-lightest w-full flex flex-row justify-center items-center h-fit base:h-20 text-center">
             <span>VALTracker was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.</span>
           </div>
         </footer>
