@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Bahnschrift, sans-serif;
+  @apply text-white;
+}
+
+h1 {
+  @apply text-7xl font-bold;
+}
+
+h2 {
+  @apply text-6xl font-bold;
+}
+
+h3 {
+  @apply text-5xl font-bold;
+}
+
+h4 {
+  @apply text-4xl font-bold;
+}
+
+h5 {
+  @apply text-3xl font-bold;
+}
+
+h6 {
+  @apply text-2xl font-bold;
+}
+
+a {
+  @apply text-button-color hover:text-button-color-hover hover:underline transition-all duration-100 ease-in bg-opacity-100;
+}
+
+button:not(.special-button):not(.nav-button):not(.docs-button) {
+  border: none;
+  @apply bg-button-color text-button-text text-lg font-semibold;
+  padding: 8px 22px;
+  border-radius: 4px;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button:not(.special-button):not(.nav-button):not(.docs-button):hover {
+  @apply bg-button-color-hover;
+  border-radius: 0px;
+}
+
+.nav-button {
+  @apply bg-maincolor-light text-button-text text-lg font-semibold border-2 border-maincolor;
+  padding: 6px 22px;
+  border-radius: 4px;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button:not(.special-button):hover {
+  @apply bg-maincolor;
+  border-radius: 0px;
+}
+
+*::-webkit-scrollbar {
+  font-size: 25px;
+  width: 0.4rem; 
+}
+
+*::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgb(194, 194, 194);
+  border-radius: 9999px;
+}
+
+.yellow-glow {
+  box-shadow: 0 0 7px rgba(255, 255, 0, 0.8);
+}
