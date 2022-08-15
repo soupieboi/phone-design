@@ -15,7 +15,7 @@ export default function Navbar({ home, bundles, featured_bundle, patchnotes, mes
           VALTracker
         </h1>
       </div>
-      <NavLink passedHref={"/docs"} active={home ? (true) : (false)} passedHrefClasses="mx-4 border-b border-b-button-color" extraClasses="mx-0 mb-4">
+      <NavLink passedHref={"/docs"} active={home ? (true) : (false)} passedHrefClasses="mx-4 border-b border-b-button-color mb-4" extraClasses="mx-0 mb-4">
         <img className="w-6 mr-2 sm:block hidden" src="/img/home-white.svg" />
         Home
       </NavLink>

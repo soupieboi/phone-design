@@ -35,7 +35,6 @@ export default function Bundles() {
               <ExecuteWrapper URL={"https://api.valtracker.gg/messages"}/>
             </ApiCard>
           </div>
-
           <Footer />
         </InfoWrapper>
       </Wrapper>
