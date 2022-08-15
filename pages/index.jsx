@@ -184,8 +184,8 @@ export default function Home({ downloadCount, downloadURL }) {
             </div>
             <div className='flex flex-col base:flex-row base2:mb-2'>
               <SmallPromoCard isLast={false} icon={'search'} title={'Search'} desc={'Search for any player to quickly see their match history!'} />
-              <SmallPromoCard isLast={false} icon={'crosshair'} title={'Matchview'} desc={'Gain information about any of your matches with a detailed overview!'} />
-              <SmallPromoCard isLast={true} icon={'clipboard'} title={'Accounts'} desc={'Switch Accounts to see multiple Shops and Match Histories!'} />
+              <SmallPromoCard isLast={false} icon={'coffee'} title={'Ko-Fi'} desc={'Like what you\'re seeing? Supports us by buying us a coffee on '} hasLink link={'Ko-Fi!'} href={'https://ko-fi.com/valtrackergg'} />
+              <SmallPromoCard isLast={true} icon={'crosshair'} title={'Matchview'} desc={'Gain information about any of your matches with a detailed overview!'} />
             </div>
             <div className='flex base2:flex-row flex-col'>
               <div className={"base2:w-1/2 w-full base2:mb-0 mb-2 md:h-48 flex flex-col items-center justify-center bg-maincolor-lightest rounded-sm p-2 mr-2"}>

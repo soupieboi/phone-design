@@ -32,7 +32,7 @@ h6 {
 }
 
 a {
-  @apply text-button-color hover:text-button-color-hover hover:underline transition-all duration-100 ease-in bg-opacity-100;
+  @apply text-button-color hover:text-button-color-hover hover:underline transition-all duration-100 ease-in bg-opacity-100 cursor-pointer;
 }
 
 button:not(.special-button):not(.nav-button):not(.docs-button) {
