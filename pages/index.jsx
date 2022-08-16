@@ -8,6 +8,7 @@ import StoreItem from '../components/StoreItem';
 import Match from '../components/Match';
 import SmallPromoCard from '../components/SmallPromoCard';
 import SeoHandler from '../components/SeoHandler';
+import Link from 'next/link';
 
 export async function getServerSideProps({ req, res }) {
   res.setHeader(
@@ -221,9 +222,9 @@ export default function Home({ downloadCount, downloadURL }) {
               </div>
             </div>
           </div>
+          <span className='my-8 text-xl'>Interested in how we store data? Check out our <Link href={'/privacy'}>Privacy Policy</Link>.</span>
         </div>
         <footer>
-          
           <div className="footer-bottom p-4 bg-maincolor-lightest w-full flex flex-row justify-center items-center h-fit base:h-20 text-center">
             <span>VALTracker was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.</span>
           </div>
