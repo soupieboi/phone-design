@@ -38,7 +38,7 @@ export default function Home({ downloadCount, downloadURL }) {
       <div className="bg-maincolor-lightest w-full h-screen text-white relative">
         <nav className='w-full h-16 z-20 fixed top-0 left-0 bg-maincolor-lightest flex flex-row items-center py-8 justify-around'>
           <div className='flex flex-row items-center'>
-            <img src='/img/VALTracker_Logo_default.png' className='w-16' />
+            <img src='/img/VALTracker_Logo_default.png' alt="VALTracker Logo" className='w-16' />
             <h6 className='font-normal hidden sm:inline'>VALTracker.gg</h6>
           </div>
           <div className='flex flex-row items-center'>
@@ -46,21 +46,21 @@ export default function Home({ downloadCount, downloadURL }) {
               className="mr-4 inline-flex flex-row items-center w-40 py-1.5 nav-button"
               onClick={() => { router.push(downloadURL) }}
             >
-              <img src='/img/discord.svg' className='w-8 mr-2 relative left-0.5' /> 
+              <img alt="" src='/img/discord.svg' className='w-8 mr-2 relative left-0.5' /> 
               <span className='relative top-px left-0.5'>Discord</span>
             </button>
             <button 
               className="mr-4 hidden sm:inline-flex flex-row items-center w-40 py-1.5 nav-button"
               onClick={() => { router.push('/docs') }}
             >
-              <img src='/img/share.svg' className='w-5 mr-2 relative bottom-px ' /> 
+              <img alt="" src='/img/share.svg' className='w-5 mr-2 relative bottom-px ' /> 
               <span className=''>API Docs</span>
             </button>
             <button 
               className="mr-2 flex-row items-center w-40 py-1.5 hidden lg:inline-flex"
               onClick={() => { router.push(downloadURL) }}
             >
-              <img src='/img/download.svg' className='w-6 mr-2 relative right-0.5 bottom-px' /> 
+              <img alt="" src='/img/download.svg' className='w-6 mr-2 relative right-0.5 bottom-px' /> 
               <span className='relative right-0.5'>Download</span>
             </button>
           </div>
@@ -82,14 +82,14 @@ export default function Home({ downloadCount, downloadURL }) {
                 className="mb-2 mr-2 flex-row items-center relative bottom-px w-40 hidden lg:inline-flex"
                 onClick={() => { router.push(downloadURL) }}
               >
-                <img src='/img/download.svg' className='w-6 mr-2 relative right-0.5' /> 
+                <img alt="" src='/img/download.svg' className='w-6 mr-2 relative right-0.5' /> 
                 <span className='relative right-0.5'>Download</span>
               </button>
               <button 
                 className='mb-2 lg:mr-4 inline-flex flex-row items-center w-44 lg:w-40' 
                 onClick={() => { router.push('https://github.com/valtracker/desktopclient'); }}
               >
-                <img src='/img/github.svg' className='w-6 mr-2 ml-5 lg:ml-2' /> 
+                <img alt="" src='/img/github.svg' className='w-6 mr-2 ml-5 lg:ml-2' /> 
                 <span className='relative top-0.5'>Source</span>
               </button>
             </div>
@@ -107,7 +107,7 @@ export default function Home({ downloadCount, downloadURL }) {
             <div className="absolute -bottom-10">
               <div className="flex flex-col justify-center items-center">
                 <span className='text-gray-500'>Or scroll down to learn more!</span>
-                <img src='/img/arrow_down.svg' className='w-6 mt-2' />
+                <img alt="" src='/img/arrow_down.svg' className='w-6 mt-2' />
               </div>
             </div>
           </div>
@@ -124,8 +124,8 @@ export default function Home({ downloadCount, downloadURL }) {
                   
                   <div className='flex flex-row mt-1'>
                     <div className='w-24 h-24 relative'>
-                      <img className='rounded' src='/img/Ascent.png' />
-                      <img className='w-9 bg-maincolor-lightest p-0.5 rounded-full absolute -bottom-2 -right-2' src='/img/Jett.png' />
+                      <img alt="Ascent" className='rounded' src='/img/Ascent.png' />
+                      <img alt="Jett" className='w-9 bg-maincolor-lightest p-0.5 rounded-full absolute -bottom-2 -right-2' src='/img/Jett.png' />
                     </div>
                     <div className='h-20 ml-4 flex flex-col'>
                       <span className='font-bold text-gray-300 text-lg'>VALORANT</span>
@@ -191,7 +191,7 @@ export default function Home({ downloadCount, downloadURL }) {
             <div className='flex base2:flex-row flex-col'>
               <div className={"base2:w-1/2 w-full base2:mb-0 mb-2 md:h-48 flex flex-col items-center justify-center bg-maincolor-lightest rounded-sm p-2 mr-2"}>
                 <div className="flex flex-row items-center text-center justify-center">
-                  <img src={'/img/discord_blurple.svg'} className='w-10 relative bottom-px' />
+                  <img alt="" src={'/img/discord_blurple.svg'} className='w-10 relative bottom-px' />
                   <span className="text-3xl font-semibold ml-2">Discord</span>
                 </div>
                 <span className="mt-4 text-center">Join our Discord to get help and support for VALTracker, converse with the community or just to chill out!</span>
@@ -207,7 +207,7 @@ export default function Home({ downloadCount, downloadURL }) {
 
               <div className={"base2:w-1/2 w-full base2:mb-0 md:h-48 flex flex-col items-center justify-center bg-maincolor-lightest rounded-sm p-2"}>
                 <div className="flex flex-row items-center text-center justify-center">
-                  <img src={'/img/share.svg'} className='w-6 relative bottom-px' />
+                  <img alt="" src={'/img/share.svg'} className='w-6 relative bottom-px' />
                   <span className="text-3xl font-semibold ml-2">API</span>
                 </div>
                 <span className="mt-4 text-center">VALTracker has it's own API for the app, but we also have some VALORANT specific Endpoints! Wanna check them out?</span>

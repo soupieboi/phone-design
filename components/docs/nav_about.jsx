@@ -7,7 +7,7 @@ export default function NavAbout({ extraClasses, active }) {
 		<div className="mt-auto border-t border-t-button-color m-4">
 			<Link href={"/docs/about"}>
 				<span className={active ? (navlink_classes_active) : (navlink_classes)}>
-					<img className="w-6 mr-2 sm:block hidden" src="/img/info.svg" />
+					<img className="w-6 mr-2 sm:block hidden" src="/img/info.svg" alt="Info Icon" />
 					About
 				</span>
 			</Link>

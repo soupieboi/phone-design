@@ -13,6 +13,7 @@ export default function Match() {
       <div className='matchview-gradient-overlay'>
         <div className='absolute top-0 left-3 flex flex-row z-40 w-1/6 h-full items-center'>
           <img
+            alt=""
             src={
               isChecked ?
               '/img/star_filled.svg'
@@ -34,12 +35,13 @@ export default function Match() {
       
       <div className='mini:w-4/5 w-full flex flex-row'>
         <div id='agent-img'>
-          <img className='w-16 h-16 shadow-img group-hover:opacity-30 transition-all duration-100 ease-linear' src={'https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayicon.png'} />
+          <img alt="Image of Jett" className='w-16 h-16 shadow-img group-hover:opacity-30 transition-all duration-100 ease-linear' src={'https://media.valorant-api.com/agents/add6443a-41bd-e414-f6ad-e58d267f4e95/displayicon.png'} />
         </div>
         <div id='match-info' className='h-full flex flex-col justify-center ml-2'>
           <span className='text-xl'>Ascent</span>
           <span className='text-base font-light flex flex-row items-center'> 
             <img 
+              alt=""
               src={'https://media.valorant-api.com/gamemodes/96bd3920-4f36-d026-2b28-c683eb0bcac5/displayicon.png'} 
               className={'w-7 transform scale-75 shadow-img'}
             />
