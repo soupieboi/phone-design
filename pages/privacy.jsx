@@ -1,39 +1,13 @@
 import SeoHandler from "../components/SeoHandler"
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 
 export default function Privacy() {
   return (
     <>
       <SeoHandler title={'VALTracker'} description={'The only VALORANT Stats Tracker you\'ll ever need. Download now - it\'s free.'} />
       <div className="bg-maincolor-light w-full h-screen text-white relative">
-        <nav className='w-full h-16 z-20 fixed top-0 left-0 bg-maincolor-lightest flex flex-row items-center py-8 justify-around'>
-          <div className='flex flex-row items-center'>
-            <img alt="VALTracker Logo" src='/img/VALTracker_Logo_default.png' className='w-16' />
-            <h6 className='font-normal hidden sm:inline'>VALTracker.gg</h6>
-          </div>
-          <div className='flex flex-row items-center'>
-            <button 
-              className="mr-4 inline-flex flex-row items-center w-40 py-1.5 nav-button"
-              onClick={() => { router.push(downloadURL) }}
-            >
-              <img alt="" src='/img/discord.svg' className='w-8 mr-2 relative left-0.5' /> 
-              <span className='relative top-px left-0.5'>Discord</span>
-            </button>
-            <button 
-              className="mr-4 hidden sm:inline-flex flex-row items-center w-40 py-1.5 nav-button"
-              onClick={() => { router.push('/docs') }}
-            >
-              <img alt="" src='/img/share.svg' className='w-5 mr-2 relative bottom-px ' /> 
-              <span className=''>API Docs</span>
-            </button>
-            <button 
-              className="mr-2 flex-row items-center w-40 py-1.5 hidden lg:inline-flex"
-              onClick={() => { router.push(downloadURL) }}
-            >
-              <img alt="" src='/img/download.svg' className='w-6 mr-2 relative right-0.5 bottom-px' /> 
-              <span className='relative right-0.5'>Download</span>
-            </button>
-          </div>
-        </nav>
+        <Navbar />
         <div className="mt-16 pt-4 mb-6 text-center bg-maincolor-light">
           <h3>Privacy Policy</h3>
           <span>Changed last 2022/04/03</span>
@@ -62,11 +36,7 @@ export default function Privacy() {
               <li>- Mail: <a href="mailto:support@valtracker.gg">support@valtracker.gg</a></li>
             </ul>
           </div>
-          <footer className="mt-8">
-            <div className="footer-bottom p-4 bg-maincolor-lightest w-full flex flex-row justify-center items-center h-fit base:h-20 text-center">
-              <span>VALTracker was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.</span>
-            </div>
-          </footer>
+          <Footer privacy />
         </div>
       </div>
     </>
