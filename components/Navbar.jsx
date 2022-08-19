@@ -1,4 +1,8 @@
+import { useRouter } from 'next/router';
+
 export default function Navbar() {
+  const router = useRouter();
+  
   return (
     <nav className='w-full h-16 z-20 fixed top-0 left-0 bg-maincolor-lightest flex flex-row items-center py-8 pr-2 base:pr-8 justify-around'>
       <div className='flex flex-row items-center'>

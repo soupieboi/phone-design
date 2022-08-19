@@ -11,23 +11,38 @@ import SeoHandler from '../components/SeoHandler';
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import fs from 'fs';
 
-export async function getServerSideProps({ req, res }) {
-  res.setHeader(
-    'Cache-Control',
-    'public, s-maxage=600, stale-while-revalidate=610'
-  )
+export async function getServerSideProps() {
+  var data = JSON.parse(fs.readFileSync('./json/data.json'));
 
-  const gh = new GithubStats('VALTracker', 'DesktopClient', process.env.GIT_TOKEN);
-  var data = await gh.getTotalDownloads();
+  if(Date.now() > data.refreshDate) {
+    const gh = new GithubStats('VALTracker', 'DesktopClient', process.env.GIT_TOKEN);
+    var data = await gh.getTotalDownloads();
+  
+    var val_version = (await(await fetch('https://api.valtracker.gg/all-versions/latest')).json()).data;
 
-  var val_version = (await(await fetch('https://api.valtracker.gg/all-versions/latest')).json()).data;
+    var downloadURL = `https://github.com/VALTracker/DesktopClient/releases/download/${val_version}/VALTracker-Setup-${val_version.split("v").pop()}.exe`;
+    
+    fs.writeFileSync('./json/data.json', JSON.stringify({
+      "downloads": data,
+      "href": downloadURL,
+      "refreshDate": Date.now() + 600000
+    }));
 
-  return {
-    props: {
-      downloadCount: data,
-      downloadURL: `https://github.com/VALTracker/DesktopClient/releases/download/${val_version}/VALTracker-Setup-${val_version.split("v").pop()}.exe`
-    },
+    return {
+      props: {
+        downloadCount: data,
+        downloadURL: downloadURL
+      },
+    }
+  } else {
+    return {
+      props: {
+        downloadCount: data.downloads,
+        downloadURL: data.href
+      },
+    }
   }
 }
 
