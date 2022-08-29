@@ -211,7 +211,7 @@ export default function Home({ downloadCount, downloadURL }) {
               </div>
             </div>
           </div>
-          <span className='my-8 text-xl'>Interested in how we store data? Check out our <Link href={'/privacy'}>Privacy Policy</Link>.</span>
+          <span className='my-8 text-xl text-center'>Interested in how we store data? Check out our <Link href={'/privacy'}>Privacy Policy</Link>.</span>
         </div>
         <Footer />
       </div>
