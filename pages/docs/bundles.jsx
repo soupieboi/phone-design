@@ -17,15 +17,9 @@ export default function Bundles() {
   return (
     <Layout bundles retracted={navbarOpen}>
       <Wrapper expanded={navbarOpen}>
-        <Topbar toggleActive={navbarOpen}>
-          <div>
-            <button onClick={handleToggle} className="ml-4 group docs-button">
-              <img alt="Menu Toggle" className={navbarOpen ? "w-10 rounded mt-2 group-hover:bg-maincolor-lightest group-hover:bg-opacity-70 p-2" : "w-9 rounded mt-2 group-hover:bg-maincolor-lightest group-hover:bg-opacity-70 p-2"} src={navbarOpen ? ('/img/lines.svg') : ('/img/close.svg')}/>
-            </button>
-          </div>
-        </Topbar>
+        <Topbar toggleActive={navbarOpen} handleToggle={handleToggle} />
         <InfoWrapper>
-          <div className='xl:mt-12'>
+          <div className='px-4 sm:py-0'>
             <ApiCard 
               method={"GET"} 
               title={"Get all Bundles"} 

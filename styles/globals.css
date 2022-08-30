@@ -35,9 +35,21 @@ a {
   @apply text-button-color hover:text-button-color-hover hover:underline transition-all duration-100 ease-in bg-opacity-100 cursor-pointer;
 }
 
-button:not(.special-button):not(.nav-button):not(.docs-button) {
+button:not(.special-button):not(.nav-button):not(.docs-button):not(.small-text) {
   border: none;
   @apply bg-button-color text-button-text text-lg font-semibold;
+  padding: 8px 22px;
+  border-radius: 4px;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button.small-text {
+  border: none;
+  @apply bg-button-color text-button-text text-base font-semibold;
   padding: 8px 22px;
   border-radius: 4px;
   outline: none;
@@ -70,7 +82,8 @@ button:not(.special-button):hover {
 
 *::-webkit-scrollbar {
   font-size: 25px;
-  width: 0.4rem; 
+  width: 0.4rem;
+  height: 0.4rem;
 }
 
 *::-webkit-scrollbar-track {
@@ -83,4 +96,14 @@ button:not(.special-button):hover {
 
 .yellow-glow {
   box-shadow: 0 0 7px rgba(255, 255, 0, 0.8);
+}
+
+.docs-navbar {
+  height: calc(100% - 4rem);
+}
+
+@media (min-width: 640px) {
+  .docs-navbar {
+    height: 100%;
+  }
 }

@@ -15,15 +15,9 @@ export default function About() {
   return (
     <Layout about retracted={navbarOpen}>
       <Wrapper expanded={navbarOpen}>
-        <Topbar toggleActive={navbarOpen}>
-          <div>
-            <button onClick={handleToggle} className="ml-4 group docs-button">
-              <img alt="Menu Toggle" className={navbarOpen ? "w-10 rounded mt-2 group-hover:bg-maincolor-lightest group-hover:bg-opacity-70 p-2" : "w-9 rounded mt-2 group-hover:bg-maincolor-lightest group-hover:bg-opacity-70 p-2"} src={navbarOpen ? ('/img/lines.svg') : ('/img/close.svg')}/>
-            </button>
-          </div>
-        </Topbar>
+        <Topbar toggleActive={navbarOpen} handleToggle={handleToggle} />
         <InfoWrapper>
-          <div className='xl:ml-24 xl:mt-12 w-5/6 xl:3/4'>
+          <div className='xl:ml-24  w-5/6 xl:3/4'>
             <span className='font-bold text-4xl block'>About</span><br/>
             <div className='mb-4'>
               <span className='text-lg'>The VALTracker API is a non-official API and not endorsed by Riot Games in any way. <br/>Riot Games, Valorant, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.</span>

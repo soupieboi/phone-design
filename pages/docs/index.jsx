@@ -13,15 +13,9 @@ export default function Home() {
   return (
     <Layout home retracted={navbarOpen}>
       <Wrapper expanded={navbarOpen}>
-        <Topbar toggleActive={navbarOpen}>
-          <div>
-            <button onClick={handleToggle} className="ml-4 group docs-button docs-button">
-              <img alt="Menu Toggle" className={navbarOpen ? "w-10 rounded mt-2 group-hover:bg-maincolor-lightest group-hover:bg-opacity-70 p-2" : "w-9 rounded mt-2 group-hover:bg-maincolor-lightest group-hover:bg-opacity-70 p-2"} src={navbarOpen ? ('/img/lines.svg') : ('/img/close.svg')}/>
-            </button>
-          </div>
-        </Topbar>
+        <Topbar toggleActive={navbarOpen} handleToggle={handleToggle} />
         <InfoWrapper>
-          <div className='xl:ml-24 xl:mt-12 w-5/6 xl:3/4'>
+          <div className='xl:ml-24  w-5/6 xl:3/4'>
             <span className='font-bold text-2xl sm:text-4xl block'>Welcome to VALTracker.gg's official API Documentation!</span><br/>
             <div className='mb-4'>
               <span className='text-xl sm:text-2xl font-semibold'>Base URL:</span><br/>
