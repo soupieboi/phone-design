@@ -32,7 +32,7 @@ export default function Patchnotes({ isMobile }) {
     <Layout patchnotes retracted={navbarOpen}>
       <Wrapper expanded={navbarOpen}>
         <Topbar toggleActive={navbarOpen} handleToggle={handleToggle} />
-        <InfoWrapper>
+        <InfoWrapper isNavbarShown={navbarOpen}>
           <div className=''>
             <ApiCard 
               method={"GET"} 

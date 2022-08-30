@@ -32,7 +32,7 @@ export default function Bundles({ isMobile }) {
     <Layout bundles retracted={navbarOpen}>
       <Wrapper expanded={navbarOpen}>
         <Topbar toggleActive={navbarOpen} handleToggle={handleToggle} />
-        <InfoWrapper>
+        <InfoWrapper isNavbarShown={navbarOpen}>
           <div className='px-4 sm:py-0'>
             <ApiCard 
               method={"GET"} 

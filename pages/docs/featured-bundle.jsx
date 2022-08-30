@@ -31,7 +31,7 @@ export default function FeaturedBundle({ isMobile }) {
     <Layout featured_bundle retracted={navbarOpen}>
       <Wrapper expanded={navbarOpen}>
         <Topbar toggleActive={navbarOpen} handleToggle={handleToggle} />
-        <InfoWrapper>
+        <InfoWrapper isNavbarShown={navbarOpen}>
           <div className=''>
             <ApiCard 
               method={"GET"} 

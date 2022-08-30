@@ -31,7 +31,7 @@ export default function Status({ isMobile }) {
     <Layout status retracted={navbarOpen}>
       <Wrapper expanded={navbarOpen}>
         <Topbar toggleActive={navbarOpen} handleToggle={handleToggle} />
-        <InfoWrapper>
+        <InfoWrapper isNavbarShown={navbarOpen}>
           <div className=''>
             <ApiCard 
               method={"GET"} 
