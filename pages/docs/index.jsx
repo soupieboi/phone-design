@@ -5,11 +5,26 @@ import Wrapper from '../../components/docs/wrapper'
 import InfoWrapper from '../../components/docs/infowrapper'
 import { useState } from 'react'
 
-export default function Home() {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+export async function getServerSideProps(context) {
+  const UA = context.req.headers['user-agent'];
+  const isMobile = Boolean(UA.match(
+    /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+  ))
+  
+  return {
+    props: {
+      isMobile: isMobile
+    }
+  }
+}
+
+export default function Home({ isMobile }) {
+  const [navbarOpen, setNavbarOpen] = useState(isMobile);
+
   const handleToggle = () => {
     setNavbarOpen(prev => !prev)
   }
+
   return (
     <Layout home retracted={navbarOpen}>
       <Wrapper expanded={navbarOpen}>
@@ -23,7 +38,7 @@ export default function Home() {
             </div>
             <div className='mb-4'>
               <span className='text-xl sm:text-2xl font-semibold'>Rate Limits:</span><br/>
-              <span className='text-sm sm:text-lg'>You have 100 Request every minute for the whole API. Rate Limits are based on your IP, so you don't have to worry about an API Key. If you exceed your Rate Limit, the server will return a <code className='bg-maincolor-lightest px-1 rounded-sm'>429</code> Status Code.</span>
+              <span className='text-sm sm:text-lg'>You have 250 Request every 4 minutes for the whole API. Rate Limits are based on your IP, so you don't have to worry about an API Key. If you exceed your Rate Limit, the server will return a <code className='bg-maincolor-lightest px-1 rounded-sm'>429</code> Status Code.</span>
             </div>
             <div className='mb-4'>
               <span className='text-xl sm:text-2xl font-semibold'>Endpoints:</span><br/>

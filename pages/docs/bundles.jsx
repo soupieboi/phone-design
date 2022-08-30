@@ -8,8 +8,22 @@ import ExecuteWrapper from '../../components/docs/ExecuteWrapper'
 import ApiCardInput from '../../components/docs/api_input'
 import { useState } from 'react'
 
-export default function Bundles() {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+export async function getServerSideProps(context) {
+  const UA = context.req.headers['user-agent'];
+  const isMobile = Boolean(UA.match(
+    /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+  ))
+  
+  return {
+    props: {
+      isMobile: isMobile
+    }
+  }
+}
+
+export default function Bundles({ isMobile }) {
+  const [navbarOpen, setNavbarOpen] = useState(isMobile);
+
   const handleToggle = () => {
     setNavbarOpen(prev => !prev)
   }

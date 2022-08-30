@@ -6,8 +6,21 @@ import InfoWrapper from '../../components/docs/infowrapper'
 import { useState } from 'react'
 import Link from 'next/link'
 
-export default function About() {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+export async function getServerSideProps(context) {
+  const UA = context.req.headers['user-agent'];
+  const isMobile = Boolean(UA.match(
+    /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+  ))
+  
+  return {
+    props: {
+      isMobile: isMobile
+    }
+  }
+}
+
+export default function About({ isMobile }) {
+  const [navbarOpen, setNavbarOpen] = useState(isMobile);
   const handleToggle = () => {
     setNavbarOpen(prev => !prev)
   }
