@@ -3,7 +3,7 @@ import Footer from '../../components/docs/footer'
 import Topbar from '../../components/docs/top_bar'
 import Wrapper from '../../components/docs/wrapper'
 import InfoWrapper from '../../components/docs/infowrapper'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 export async function getServerSideProps(context) {
@@ -29,7 +29,7 @@ export default function About({ isMobile }) {
     <Layout about retracted={navbarOpen}>
       <Wrapper expanded={navbarOpen}>
         <Topbar toggleActive={navbarOpen} handleToggle={handleToggle} />
-        <InfoWrapper isNavbarShown={navbarOpen}>
+        <InfoWrapper isNavbarShown={navbarOpen} isMobile={isMobile}>
           <div className='xl:ml-24  w-5/6 xl:3/4'>
             <span className='font-bold text-4xl block'>About</span><br/>
             <div className='mb-4'>

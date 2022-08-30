@@ -3,7 +3,7 @@ import Footer from '../../components/docs/footer'
 import Topbar from '../../components/docs/top_bar'
 import Wrapper from '../../components/docs/wrapper'
 import InfoWrapper from '../../components/docs/infowrapper'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export async function getServerSideProps(context) {
   const UA = context.req.headers['user-agent'];
@@ -29,8 +29,8 @@ export default function Home({ isMobile }) {
     <Layout home retracted={navbarOpen}>
       <Wrapper expanded={navbarOpen}>
         <Topbar toggleActive={navbarOpen} handleToggle={handleToggle} />
-        <InfoWrapper isNavbarShown={navbarOpen}>
-          <div className='xl:ml-24  w-5/6 xl:3/4'>
+         <InfoWrapper isNavbarShown={navbarOpen} isMobile={isMobile}>
+          <div className='xl:ml-24 w-5/6 xl:3/4'>
             <span className='font-bold text-2xl sm:text-4xl block'>Welcome to VALTracker.gg's official API Documentation!</span><br/>
             <div className='mb-4'>
               <span className='text-xl sm:text-2xl font-semibold'>Base URL:</span><br/>

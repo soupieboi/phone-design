@@ -6,7 +6,7 @@ import InfoWrapper from '../../components/docs/infowrapper'
 import ApiCard from '../../components/docs/api_card'
 import ExecuteWrapper from '../../components/docs/ExecuteWrapper'
 import ApiCardInput from '../../components/docs/api_input'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export async function getServerSideProps(context) {
   const UA = context.req.headers['user-agent'];
@@ -32,7 +32,7 @@ export default function Bundles({ isMobile }) {
     <Layout bundles retracted={navbarOpen}>
       <Wrapper expanded={navbarOpen}>
         <Topbar toggleActive={navbarOpen} handleToggle={handleToggle} />
-        <InfoWrapper isNavbarShown={navbarOpen}>
+        <InfoWrapper isNavbarShown={navbarOpen} isMobile={isMobile}>
           <div className='px-4 sm:py-0'>
             <ApiCard 
               method={"GET"} 

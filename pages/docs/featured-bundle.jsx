@@ -5,7 +5,7 @@ import Wrapper from '../../components/docs/wrapper'
 import InfoWrapper from '../../components/docs/infowrapper'
 import ApiCard from '../../components/docs/api_card'
 import ExecuteWrapper from '../../components/docs/ExecuteWrapper'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export async function getServerSideProps(context) {
   const UA = context.req.headers['user-agent'];
@@ -31,7 +31,7 @@ export default function FeaturedBundle({ isMobile }) {
     <Layout featured_bundle retracted={navbarOpen}>
       <Wrapper expanded={navbarOpen}>
         <Topbar toggleActive={navbarOpen} handleToggle={handleToggle} />
-        <InfoWrapper isNavbarShown={navbarOpen}>
+        <InfoWrapper isNavbarShown={navbarOpen} isMobile={isMobile}>
           <div className=''>
             <ApiCard 
               method={"GET"} 
