@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
           type: 'website',
           locale: 'en_US',
           description: `VALTracker is the only VALORANT Stats Tracker that you'll need. It's completely free, no ads, no subscription!`,
-          site_name: 'VALTracker.gg',
+          site_name: 'VALORANT Shop Checker, Stats Tracker and more - VALTracker',
           url: `https://valtracker.gg${router.route}`,
         }}
       />
