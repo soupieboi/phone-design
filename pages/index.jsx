@@ -67,20 +67,22 @@ export default function Home({ downloadCount, downloadURL }) {
               <span className='lg:hidden inline-block'>Download now - available on Windows.</span>
             </p>
             <div className="buttons">
-              <button 
-                className="mb-2 mr-2 flex-row items-center relative bottom-px w-40 hidden lg:inline-flex"
-                onClick={() => { router.push(downloadURL) }}
-              >
-                <img alt="" src='/img/download.svg' className='w-6 mr-2 relative right-0.5' /> 
-                <span className='relative right-0.5'>Download</span>
-              </button>
-              <button 
-                className='mb-2 lg:mr-4 inline-flex flex-row items-center w-44 lg:w-40' 
-                onClick={() => { router.push('https://github.com/valtracker/desktopclient'); }}
-              >
-                <img alt="" src='/img/github.svg' className='w-6 mr-2 ml-5 lg:ml-2' /> 
-                <span className='relative top-0.5'>Source</span>
-              </button>
+              <Link href={downloadURL}>
+                <button 
+                  className="mb-2 mr-2 flex-row items-center relative bottom-px w-40 hidden lg:inline-flex"
+                >
+                  <img alt="" src='/img/download.svg' className='w-6 mr-2 relative right-0.5' /> 
+                  <span className='relative right-0.5'>Download</span>
+                </button>
+              </Link>
+              <Link href={'https://github.com/valtracker/desktopclient'}>
+                <button 
+                  className='mb-2 lg:mr-4 inline-flex flex-row items-center w-44 lg:w-40' 
+                >
+                  <img alt="" src='/img/github.svg' className='w-6 mr-2 ml-5 lg:ml-2' /> 
+                  <span className='relative top-0.5'>Source</span>
+                </button>
+              </Link>
             </div>
             <KofiButton color="#bc0233" title="Support us on Ko-Fi" kofiID="J3J2BUBT8" className="" />
             <span className="text-xl mt-4">
