@@ -1,14 +1,17 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-export default function Navbar() {
+export default function Navbar({ downloadURL }) {
   const router = useRouter();
   
   return (
     <nav className='w-full h-16 z-20 fixed top-0 left-0 bg-maincolor-lightest flex flex-row items-center py-8 pr-2 base:pr-8 justify-around'>
-      <div className='flex flex-row items-center'>
-        <img src='/img/VALTracker_Logo_default.png' alt="VALTracker Logo" className='w-16' />
-        <h6 className='font-normal hidden sm:inline'>VALTracker.gg</h6>
-      </div>
+      <Link href={'/'}>
+        <div className='flex flex-row items-center cursor-pointer'>
+          <img src='/img/VALTracker_Logo_default.png' alt="VALTracker Logo" className='w-16' />
+          <h6 className='font-normal hidden sm:inline'>VALTracker.gg</h6>
+        </div>
+      </Link>
       <div className='flex flex-row items-center'>
         <button 
           className="mr-4 inline-flex flex-row items-center w-40 py-1.5 nav-button"

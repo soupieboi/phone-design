@@ -1,0 +1,57 @@
+{
+  "seo": {
+    "title": "VALTracker - Privacy Policy",
+    "desc": "Find out about how we store and use your data, and how you can delete it.",
+    "keywords": "VALTracker Privacy, VALTracker Privacy Policy, VALTracker Data, How is VALTracker Data stores, How does VALTracker store data, Delete VALTracker Data"
+  },
+  "header": "Privacy Policy",
+  "changed_last": "Changed last",
+  "desc": "VALTracker (\"we\", \"us\") is managed by Spirit#6996 (Discord) / @SpiritLetsPlays (Twitter) and is responsible for the website and Program VALTracker.",
+  "q_1": {
+    "header": "What data is saved by VALTracker?",
+    "bullet_points": {
+      "bp_1": "- Settings for the App",
+      "bp_2": "- Tokens used for Riot Logins (if used)"
+    }
+  },
+  "q_2": {
+    "header": "How is this data collected?",
+    "desc": "All Riot Games data is collected using Riot's Website and their API they provide. All settings for the app are first auto-generated and then stored locally on the user's PC."
+  },
+  "q_3": {
+    "header": "How is this data saved?",
+    "desc": "All data by Riot Games is saved in form of Tokens on the users PC that neither contain Username nor password. All settings are also stored on the user's system in form of .json files. All data can be accessed here:",
+    "path": "C:/Users/<USERNAME_HERE>/AppData/Roaming/VALTracker/user_data"
+  },
+  "q_4": {
+    "header": "How is this data used?",
+    "desc": "All data is only used by the app itself. At no point does the app send any data to a server that collects it. Riot Games' Tokens are used for authentication with their servers, and their servers only."
+  },
+  "q_5": {
+    "header": "Sharing/Saving of data",
+    "desc": "All data is stored on the users PC and is not available to anyone else."
+  },
+  "q_6": {
+    "header": "How can I delete my data?",
+    "desc": "If you want to delete all your data that is stored by the App, uninstall it and delete this folder on your PC:",
+    "path": "C:/Users/<USERNAME_HERE>/AppData/Roaming/VALTracker/user_data"
+  },
+  "q_7": {
+    "header": "Contact",
+    "desc": "If you want to contact us because of questions, join our Discord, DM us on Twitter or write us a Mail:",
+    "bullet_points": {
+      "bp_1": {
+        "bp_info": "- ",
+        "bp_content": "Our Discord Server"
+      },
+      "bp_2": {
+        "bp_info": "- Twitter: ",
+        "bp_content": "@VALTracker_gg"
+      },
+      "bp_3": {
+        "bp_info": "- E-Mail: ",
+        "bp_content": "support@valtracker.gg"
+      }
+    }
+  }
+}

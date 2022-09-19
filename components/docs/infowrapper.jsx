@@ -1,10 +1,6 @@
 import React from "react";
 
 export default function InfoWrapper({ isNavbarShown, isMobile, children }) {
-  React.useEffect(() => {
-    console.log("Navbar ", isNavbarShown)
-    console.log("isMobile ", isMobile)
-  }, [])
   return (
     <div 
       className={

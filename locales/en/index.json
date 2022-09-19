@@ -1,0 +1,91 @@
+{
+  "seo": {
+    "title": "VALTracker",
+    "desc": "VALTracker is the only VALORANT Stats Tracker that you'll need. Download now - It's completely free, no ads, no subscription!",
+    "keywords": "VALORANT, Stats, Statistics, valtracker, valoranttracker, tracker, valorant, rich presence, richpresence, discord presence, skin changer, shop checker, daily shop checker"
+  },
+  "lang": "en",
+  "desc": "The only VALORANT Stats Tracker you'll ever need.",
+  "download_desc_pc": "Download now - it's free.",
+  "download_desc_mobile": "Download now - available on Windows.",
+  "downloads_desc": "Downloads",
+  "scroll_text": "Or scroll down to learn more!",
+  "buttons": {
+    "download": "Download",
+    "src": "Source",
+    "kofi": "Support us on Ko-Fi"
+  },
+  "features": {
+    "header": "Features",
+    "item_1": {
+      "header": "Custom Discord Rich Presence",
+      "desc": "Gain access to a custom Discord Rich Presence that updates accordingly to where you are in game, be an Agent Select or a Comp Match. Just leave the app running in the background while playing.",
+      "promo_item": {
+        "playing_a_game": "PLAYING A GAME",
+        "status": "Competitive -",
+        "status2": "In Match",
+        "timer": "04:20 elapsed"
+      }
+    },
+    "item_2": {
+      "header": "Built-in Shop Checker",
+      "desc": "Quickly check your Daily Store and Night Market with the built-in Store Checker. You can even wishlist skins to get a Desktop Notification when they are in your Daily Store! Come on, we all know you want that Reaver Vandal.",
+      "promo_item": {
+        "skin_name": "Reaver Vandal"
+      }
+    },
+    "item_3": {
+      "header": "Favorite Matches",
+      "desc": "Mark any of your Matches as favorites to check on them at any time, even if that's in a year!",
+      "promo_item": {
+        "map_name": "Ascent",
+        "mode_name": "Unrated",
+        "victory_text": "VICTORY"
+      }
+    }
+  },
+  "other_features": {
+    "header": "And so much more!",
+    "item_1": {
+      "header": "The Hub",
+      "desc": "Instantly see your most recent Matches, Stats, Agent Contract and Battle Pass Progress!"
+    },
+    "item_2": {
+      "header": "Inventory",
+      "desc": "View all skins and manage your inventory from within the app using presets!"
+    },
+    "item_3": {
+      "header": "Accounts",
+      "desc": "Switch Accounts to see multiple Shops and Match Histories!"
+    },
+    "item_4": {
+      "header": "Search",
+      "desc": "Search for any player to quickly see their match history!"
+    },
+    "item_5": {
+      "header": "Ko-Fi",
+      "desc": "Like what you're seeing? Support us on",
+      "link_text": "Ko-Fi!"
+    },
+    "item_6": {
+      "header": "Matchview",
+      "desc": "Gain information about any of your matches with a detailed overview!"
+    },
+    "item_7": {
+      "header": "Discord",
+      "desc": "Join our Discord to get help and support for VALTracker, converse with the community or just to chill out!",
+      "button_text": "Join"
+    },
+    "item_8": {
+      "header": "API",
+      "desc": "VALTracker has it's own API for the app, but we also have some VALORANT specific Endpoints! Wanna check them out?",
+      "button_text": "API Docs"
+    }
+  },
+  "priv_info": {
+    "desc": "Interested in how we store data? Check out our",
+    "link_text": "Privacy Policy",
+    "desc2": "."
+  },
+  "footer": "VALTracker was created under Riot Games' \"Legal Jibber Jabber\" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project."
+}

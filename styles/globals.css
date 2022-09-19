@@ -35,9 +35,9 @@ a {
   @apply text-button-color hover:text-button-color-hover hover:underline transition-all duration-100 ease-in bg-opacity-100 cursor-pointer;
 }
 
-button:not(.special-button):not(.nav-button):not(.docs-button):not(.small-text) {
+button:not(.special-button):not(.nav-button):not(.docs-button):not(.small-text):not(.button-1):not(.button-2):not(.button-3-container) {
   border: none;
-  @apply bg-button-color text-button-text text-lg font-semibold;
+  @apply bg-button-color text-button-text text-lg font-semibold z-auto;
   padding: 8px 22px;
   border-radius: 4px;
   outline: none;
@@ -49,7 +49,7 @@ button:not(.special-button):not(.nav-button):not(.docs-button):not(.small-text) 
 
 button.small-text {
   border: none;
-  @apply bg-button-color text-button-text text-base font-semibold;
+  @apply bg-button-color text-button-text text-sm font-semibold;
   padding: 8px 22px;
   border-radius: 4px;
   outline: none;
@@ -59,9 +59,8 @@ button.small-text {
   transition: all 0.3s;
 }
 
-button:not(.special-button):not(.nav-button):not(.docs-button):hover {
+button:not(.special-button):not(.nav-button):not(.docs-button):not(.button-1):not(.button-2):not(.button-3-container):hover {
   @apply bg-button-color-hover;
-  border-radius: 0px;
 }
 
 .nav-button {
@@ -75,9 +74,8 @@ button:not(.special-button):not(.nav-button):not(.docs-button):hover {
   transition: all 0.3s;
 }
 
-button:not(.special-button):hover {
+button:not(.special-button):not(.button-1):not(.button-2):not(.button-3-container):hover {
   @apply bg-maincolor;
-  border-radius: 0px;
 }
 
 *::-webkit-scrollbar {
@@ -106,4 +104,158 @@ button:not(.special-button):hover {
   .docs-navbar {
     height: 100%;
   }
+}
+
+code {
+  @apply bg-black bg-opacity-80 py-px px-2 rounded;
+}
+
+.code-font, .code-font span {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.json-key {
+  @apply text-gradient-left;
+}
+
+.json-value {
+  @apply text-gradient-right;
+}
+
+.json-string {
+  @apply text-val-blue;
+}
+
+.button-1, .button-2 {
+  @apply transition-all ease-out duration-1000 opacity-100;
+  border: none;
+  @apply bg-button-color text-button-text text-lg font-semibold z-auto;
+  padding: 8px 22px;
+  border-radius: 4px;
+  outline: none;
+  position: relative;
+}
+
+.button-3-container {
+  @apply transition-all ease-out duration-1000 opacity-100 delay-1000;
+}
+
+.button-1:hover, .button-2:hover {
+  @apply bg-button-color-hover;
+}
+
+.button-1.w-44 {
+  @apply bottom-0;
+}
+
+.button-1.w-44.animate {
+  @apply bottom-24 opacity-0;
+}
+
+.button-1:not(.w-44) {
+  @apply left-0;
+}
+
+.button-1.animate:not(.w-44) {
+  @apply left-24 opacity-0;
+}
+
+.button-2 {
+  @apply right-0;
+}
+
+.button-2.animate {
+  @apply right-24 opacity-0;
+}
+
+.button-2 {
+  @apply right-0;
+}
+
+.button-2.animate {
+  @apply right-24 opacity-0;
+}
+
+.button-3-container {
+  @apply relative top-0;
+}
+
+.button-3-container.animate, {
+  @apply top-12 opacity-0;
+}
+
+.scroll-info {
+  @apply opacity-100 transition-all duration-1000 ease-out;
+}
+
+.scroll-info.animate {
+  @apply opacity-0;
+}
+
+@keyframes button1 {
+  0% {
+    opacity: 0;
+    right: 200px;
+  }
+  100% {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+.floaty { 
+  animation-name: float;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  @apply relative;
+}
+
+.floaty.fast { 
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  @apply relative;
+}
+
+@keyframes float {
+  0% { 
+    transform: translate(0,  0px); 
+  }
+  50% { 
+    transform: translate(0, 10px); 
+  }
+  100% { 
+    transform: translate(0, -0px); 
+  }
+}
+
+@keyframes comeInOut {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.sparkle-wrapper {
+  animation: comeInOut 700ms forwards;
+}
+
+.sparkle-svg {
+  animation: spin 1000ms linear;
 }

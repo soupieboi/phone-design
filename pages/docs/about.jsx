@@ -5,6 +5,7 @@ import Wrapper from '../../components/docs/wrapper'
 import InfoWrapper from '../../components/docs/infowrapper'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import SeoHandler from '../../components/SeoHandler'
 
 export async function getServerSideProps(context) {
   const UA = context.req.headers['user-agent'];
@@ -27,6 +28,7 @@ export default function About({ isMobile }) {
   
   return (
     <Layout about retracted={navbarOpen}>
+      <SeoHandler title={'VALTracker API - About'} description={'All Information you need about what makes this API and Website work.'} />
       <Wrapper expanded={navbarOpen}>
         <Topbar toggleActive={navbarOpen} handleToggle={handleToggle} />
         <InfoWrapper isNavbarShown={navbarOpen} isMobile={isMobile}>

@@ -6,6 +6,7 @@ import InfoWrapper from '../../components/docs/infowrapper'
 import ApiCard from '../../components/docs/api_card'
 import ExecuteWrapper from '../../components/docs/ExecuteWrapper'
 import { useState, useEffect } from 'react'
+import SeoHandler from '../../components/SeoHandler'
 
 export async function getServerSideProps(context) {
   const UA = context.req.headers['user-agent'];
@@ -29,6 +30,7 @@ export default function FeaturedBundle({ isMobile }) {
   
   return (
     <Layout featured_bundle retracted={navbarOpen}>
+      <SeoHandler title={'VALTracker API - Featured Bundle'} description={'All Endpoints of our API that relate to the features VALORANT Bundle.'} />
       <Wrapper expanded={navbarOpen}>
         <Topbar toggleActive={navbarOpen} handleToggle={handleToggle} />
         <InfoWrapper isNavbarShown={navbarOpen} isMobile={isMobile}>
@@ -38,45 +40,40 @@ export default function FeaturedBundle({ isMobile }) {
               title={"Get featured Bundle"} 
               route={"https://api.valtracker.gg/featured-bundle"} 
               desc={"Returns the current featured bundle with all prices, weapons and other collectables."}
-            >
-              <ExecuteWrapper URL={"https://api.valtracker.gg/featured-bundle"} />
-            </ApiCard>
+              routeVars={[]}
+            />
 
             <ApiCard 
               method={"GET"} 
               title={"Get the featured Bundle's weapons"} 
               route={"https://api.valtracker.gg/featured-bundle/weapons"} 
               desc={"Returns the featured Bundle's weapons using its UUID."}
-            >
-              <ExecuteWrapper URL={"https://api.valtracker.gg/featured-bundle/weapons"} />
-            </ApiCard>
+              routeVars={[]}
+            />
 
             <ApiCard 
               method={"GET"} 
               title={"Get the featured Bundle's buddies"} 
               route={"https://api.valtracker.gg/featured-bundle/buddies"} 
               desc={"Returns the featured Bundle's buddies using its UUID."}
-            >
-              <ExecuteWrapper URL={"https://api.valtracker.gg/featured-bundle/buddies"} />
-            </ApiCard>
+              routeVars={[]}
+            />
 
             <ApiCard 
               method={"GET"} 
               title={"Get the featured Bundle's cards"} 
               route={"https://api.valtracker.gg/featured-bundle/cards"} 
               desc={"Returns the featured Bundle's cards using its UUID."}
-            >
-              <ExecuteWrapper URL={"https://api.valtracker.gg/featured-bundle/cards"} />
-            </ApiCard>
+              routeVars={[]}
+            />
 
             <ApiCard 
               method={"GET"} 
               title={"Get the featured Bundle's sprays"} 
               route={"https://api.valtracker.gg/featured-bundle/sprays"} 
               desc={"Returns the featured Bundle's sprays using its UUID."}
-            >
-              <ExecuteWrapper URL={"https://api.valtracker.gg/featured-bundle/sprays"} />
-            </ApiCard>
+              routeVars={[]}
+            />
           </div>
           <Footer />
         </InfoWrapper>

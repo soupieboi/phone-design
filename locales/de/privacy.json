@@ -1,0 +1,57 @@
+{
+  "seo": {
+    "title": "VALTracker - Privacy Policy",
+    "desc": "Erfahre, wie wir deine Daten speichern, verwenden und wie du sie löschen kannst.",
+    "keywords": "valtracker datenschutz, valtracker daten, valtracker daten löschen"
+  },
+  "header": "Datenschutzerklärung",
+  "changed_last": "Zuletzt geändert:",
+  "desc": "VALTracker (\"wir\", \"uns\", \"unserer\"\"unser\") wird von Spirit#6996 (Discord) / @SpiritLetsPlays (Twitter) verwaltet und ist zuständig für diese Website und die App VALTracker.",
+  "q_1": {
+    "header": "Welche Daten werden von VALTracker gespeichert?",
+    "bullet_points": {
+      "bp_1": "- Einstellungen für die App",
+      "bp_2": "- Für Riot-Logins verwendete Tokens"
+    }
+  },
+  "q_2": {
+    "header": "Wie werden diese Daten erhoben?",
+    "desc": "Alle Daten von Riot Games werden mithilfe der Website von Riot und der von ihnen bereitgestellten API erfasst. Alle Einstellungen für die App werden zunächst automatisch generiert und dann lokal auf dem PC des Nutzers gespeichert."
+  },
+  "q_3": {
+    "header": "Wie werden diese Daten gespeichert?",
+    "desc": "Alle Daten von Riot Games werden in Form von Tokens auf dem PC des Benutzers gespeichert, die weder Benutzername noch Passwort enthalten. Alle Einstellungen werden auch auf dem System des Benutzers in Form von .json-Dateien gespeichert. Alle Daten sind hier abrufbar:",
+    "path": "C:/Users/<BENUTZERNAME_HIER>/AppData/Roaming/VALTracker/user_data"
+  },
+  "q_4": {
+    "header": "Wie werden diese Daten verwendet?",
+    "desc": "Alle Daten werden nur von der App selbst verwendet. Zu keinem Zeitpunkt sendet die App Daten an einen Server, der sie sammelt. Die Tokens von Riot Games werden nur zur Authentifizierung mit ihren Servern verwendet."
+  },
+  "q_5": {
+    "header": "Teilen/Speichern von Daten",
+    "desc": "Alle Daten werden auf dem PC des Benutzers gespeichert und sind für niemanden verfügbar."
+  },
+  "q_6": {
+    "header": "Wie kann ich meine Daten löschen?",
+    "desc": "Wenn Sie alle Ihre von der App gespeicherten Daten löschen möchten, deinstalliere sie und lösche diesen Ordner auf deinem PC:",
+    "path": "C:/Users/<BENUTZERNAME_HIER>/AppData/Roaming/VALTracker/user_data"
+  },
+  "q_7": {
+    "header": "Kontaktinformationen",
+    "desc": "Wenn du uns wegen Fragen kontaktieren möchtest, trete unserem Discord bei, sende uns eine Direktnachricht auf Twitter oder schreibe uns eine E-Mail:",
+    "bullet_points": {
+      "bp_1": {
+        "bp_info": "- ",
+        "bp_content": "Unser Discord Server"
+      },
+      "bp_2": {
+        "bp_info": "- Twitter: ",
+        "bp_content": "@VALTracker_gg"
+      },
+      "bp_3": {
+        "bp_info": "- E-Mail: ",
+        "bp_content": "support@valtracker.gg"
+      }
+    }
+  }
+}

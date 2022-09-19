@@ -6,6 +6,7 @@ import InfoWrapper from '../../components/docs/infowrapper'
 import ApiCard from '../../components/docs/api_card'
 import ExecuteWrapper from '../../components/docs/ExecuteWrapper'
 import { useState, useEffect } from 'react'
+import SeoHandler from '../../components/SeoHandler'
 
 export async function getServerSideProps(context) {
   const UA = context.req.headers['user-agent'];
@@ -29,6 +30,7 @@ export default function Messages({ isMobile }) {
   
   return (
     <Layout messages retracted={navbarOpen}>
+      <SeoHandler title={'VALTracker API - Messages'} description={'All Endpoints of our API that relate to VALTracker\'s Messages.'} />
       <Wrapper expanded={navbarOpen}>
         <Topbar toggleActive={navbarOpen} handleToggle={handleToggle} />
         <InfoWrapper isNavbarShown={navbarOpen} isMobile={isMobile}>
@@ -38,9 +40,8 @@ export default function Messages({ isMobile }) {
               title={"Get all messages"} 
               route={"https://api.valtracker.gg/messages"} 
               desc={"Returns the last 5 Messages for VALTracker. Messages are sorted by release date, lowest to highest. Each message contains the date it was published on in the Unix Time Format (in ms). All text is written in markdown."}
-            >
-              <ExecuteWrapper URL={"https://api.valtracker.gg/messages"}/>
-            </ApiCard>
+              routeVars={[]}
+            />
           </div>
           <Footer />
         </InfoWrapper>

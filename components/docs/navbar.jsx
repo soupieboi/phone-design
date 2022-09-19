@@ -20,7 +20,7 @@ export default function Navbar({ home, bundles, featured_bundle, patchnotes, mes
         Home
       </NavLink>
       <NavLink passedHref={"/docs/patchnotes"} active={patchnotes ? (true) : (false)} extraClasses="">
-        <img alt="" className="w-6 mr-2 block" src="/img/clipboard-white.svg" />
+        <img alt="" className="w-6 mr-2 block text-white" src="/img/clipboard-white.svg" />
         VALTracker Patchnotes
       </NavLink>
       <NavLink passedHref={"/docs/messages"} active={messages ? (true) : (false)} extraClasses="">
@@ -39,7 +39,7 @@ export default function Navbar({ home, bundles, featured_bundle, patchnotes, mes
         <img alt="" className="w-6 mr-2 block" src="/img/file.svg" />
         Featured Bundle
       </NavLink>
-      <NavAbout active={about ? (true) : (false)} extraClasses={""}/>
+      <NavAbout active={about ? (true) : (false)} extraClasses={""} />
     </div>
   )
 }

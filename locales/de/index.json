@@ -1,0 +1,91 @@
+{
+  "seo": {
+    "title": "VALTracker",
+    "desc": "VALTracker ist der einzige VALORANT Tracker, den du brauchst. Lade VALTracker jetzt herunter - komplett kostenlos.",
+    "keywords": "VALORANT, Statistiken, valtracker, valoranttracker deutsch, deutscher tracker, tracker german, valoranttracker german, VALORANT Shop German, german, tracker, valorant, rich presence, german valorant presence, richpresence, discord presence"
+  },
+  "lang": "de",
+  "desc": "Der einzige VALORANT Tracker, den du brauchst.",
+  "download_desc_pc": "Lade VALTracker jetzt herunter - komplett kostenlos.",
+  "download_desc_mobile": "Lade VALTracker jetzt herunter - verfügbar für Windows.",
+  "downloads_desc": "Downloads",
+  "scroll_text": "Oder scrolle nach unten, um mehr zu sehen!",
+  "buttons": {
+    "download": "Download",
+    "src": "Quellcode",
+    "kofi": "Unterstütze uns auf Ko-Fi"
+  },
+  "features": {
+    "header": "Features",
+    "item_1": {
+      "header": "VALORANT Discord Status",
+      "desc": "Erhalte Zugang zu deinem eigenen Discord Status, der sich deinem aktuellen Spiel anpasst, sei es eine Agentenwahl oder ein Ungewertetes Spiel. Lass' die App einfach im Hintergrund laufen.",
+      "promo_item": {
+        "playing_a_game": "SPIELT EIN SPIEL",
+        "status": "Gewertet -",
+        "status2": "Im Spiel",
+        "timer": "04:20 vergangen"
+      }
+    },
+    "item_2": {
+      "header": "Eingebauter VALORANT Shop",
+      "desc": "Du kannst deinen täglichen VALORANT Shop und Nachtmarkt in der App ansehen. Außerdem kannst du Skins auf deine Wunschliste setzen, um eine Desktop-Benachrichtigung zu erhalten, wenn sie in deinem täglichen Store sind!",
+      "promo_item": {
+        "skin_name": "Reaver Vandal"
+      }
+    },
+    "item_3": {
+      "header": "Favorisierte Matches",
+      "desc": "Setze deine Matches als Favoriten, um sie jederzeit anzusehen, auch wenn das erst in einem Jahr ist!",
+      "promo_item": {
+        "map_name": "Ascent",
+        "mode_name": "Ungewertet",
+        "victory_text": "SIEG"
+      }
+    }
+  },
+  "other_features": {
+    "header": "Und so viel mehr!",
+    "item_1": {
+      "header": "Dein Hub",
+      "desc": "Überprüfe deine neuesten Matches, Statistiken und deinen Battle-Pass Fortschritt!"
+    },
+    "item_2": {
+      "header": "Inventory",
+      "desc": "Schau dir alle Skins an, und verwalte dein Inventar direkt in der App!"
+    },
+    "item_3": {
+      "header": "Kontos",
+      "desc": "Wechsle dein Riot-Konto, um mehrere Shops und Spielverläufe zu sehen!"
+    },
+    "item_4": {
+      "header": "Spielersuche",
+      "desc": "Suche nach einem beliebigen Spieler, um seinen Spielverlauf zu sehen!"
+    },
+    "item_5": {
+      "header": "Ko-Fi",
+      "desc": "Magst du, was du siehst? Unterstütze uns mit einer Spende auf",
+      "link_text": "Ko-Fi!"
+    },
+    "item_6": {
+      "header": "Spielansicht",
+      "desc": "Erhalte Informationen zu jedem deiner Matches mit einer detaillierten Übersicht!"
+    },
+    "item_7": {
+      "header": "Discord",
+      "desc": "Trete unserem Discord-Server bei, um Hilfe mit VALTracker zu erhalten oder dich mit der Community zu unterhalten!",
+      "button_text": "Join"
+    },
+    "item_8": {
+      "header": "API",
+      "desc": "VALTracker hat eine eigene API für die App, aber wir bieten auch einige VALORANT-Spezifische Endpunkte kostenlos an!",
+      "button_text": "API Docs"
+    }
+  },
+  "priv_info": {
+    "desc": "Willst du wissen, wie wir deine Daten speichern? Schau dir unsere",
+    "link_text": "Datenschutzerklärung",
+    "desc2": "an."
+  },
+  "footer": "VALTracker was created under Riot Games' \"Legal Jibber Jabber\" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project."
+}
