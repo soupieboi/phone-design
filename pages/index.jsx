@@ -95,11 +95,11 @@ export default function Home({ downloadCount, downloadURL, isMobile, localConten
   React.useEffect(() => {
     if(isInt(timerSeconds/30)) {
       if((matchTeam1Score - matchTeam2Score) >= 1) {
-        setMatchTeam2Score(matchTeam2Score+1);
+        setTimeout(() => setMatchTeam2Score(matchTeam2Score+1), 500);
       } else if((matchTeam2Score - matchTeam1Score) >= 1) {
-        setMatchTeam1Score(matchTeam1Score+1);
+        setTimeout(() => setMatchTeam1Score(matchTeam1Score+1), 500);
       } else if((matchTeam1Score - matchTeam2Score) === 0) {
-        setMatchTeam1Score(matchTeam1Score+1);
+        setTimeout(() => setMatchTeam1Score(matchTeam1Score+1), 500);
       }
     }
   }, [timerSeconds]);
@@ -181,7 +181,6 @@ export default function Home({ downloadCount, downloadURL, isMobile, localConten
               <div className='base:w-1/2 base:h-auto h-1/2 w-full base:mr-2 base:mb-0 mb-2'>
                 <div id='DiscordCloneThingy' className='bg-maincolor-lightest p-2 pt-3 pb-6 pl-4 rounded w-full'>
                   <span className='font-bold text-gray-300 text-lg'>{localContent.features.item_1.promo_item.playing_a_game}</span>
-                  
                   <div className='flex flex-row mt-1'>
                     <div className='w-24 h-24 relative'>
                       <img alt="Ascent" className='rounded' src='/img/Ascent.png' />
@@ -202,7 +201,7 @@ export default function Home({ downloadCount, downloadURL, isMobile, localConten
               <div className='base:w-1/2 w-full base:text-left text-center p-2 pt-0'>
                 <span className='text-lg'>
                   {localContent.features.item_1.desc}
-                  </span>
+                </span>
               </div>
             </div>
           </div>
