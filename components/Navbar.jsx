@@ -5,7 +5,7 @@ export default function Navbar({ downloadURL }) {
   const router = useRouter();
   
   return (
-    <nav className='w-full h-16 z-20 fixed top-0 left-0 bg-maincolor-lightest flex flex-row items-center py-8 pr-2 base:pr-8 justify-around'>
+    <nav className='w-full h-16 z-30 fixed top-0 left-0 bg-maincolor-lightest flex flex-row items-center py-8 pr-2 base:pr-8 justify-around'>
       <Link href={'/'}>
         <div className='flex flex-row items-center cursor-pointer'>
           <img src='/img/VALTracker_Logo_default.png' alt="VALTracker Logo" className='w-16' />

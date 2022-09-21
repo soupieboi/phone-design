@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps, locale }) {
         <meta name="theme-color" content="#bc0233" data-react-helmet="true" />
       </Head>
       <AnimatePresence
-        exitBeforeEnter={true}
+        mode='wait'
         onExitComplete={() => window.scrollTo(0, 0)}
       >
         <Component key={router.pathname} {...pageProps} />

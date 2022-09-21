@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "framer-motion": "^7.1.0",
+    "framer-motion": "^7.3.6",
     "github-release-stats": "^1.0.2",
     "kofi-button": "^1.1.1",
     "next": "12.2.5",

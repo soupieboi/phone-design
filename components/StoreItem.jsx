@@ -7,7 +7,7 @@ export default function StoreItem({ itemName }) {
   return(
     <div 
       id={'item-box'}
-      className='group h-52 w-full relative bg-maincolor-lightest mr-2 rounded shadow-lg transition-all duration-100 ease-in'
+      className='group h-52 w-full relative bg-maincolor-lightest mr-2 rounded shadow-lg transition-all duration-100 ease-in drop-shadow-2xl'
     >
       <div className='absolute bottom-4 left-4 flex flex-row items-center'>
         {
@@ -35,7 +35,7 @@ export default function StoreItem({ itemName }) {
       </div>
       <div 
         id='item-price'
-        className='text-xl text-gray-300 flex flex-row items-center absolute bottom-4 right-4 bg-opacity-60 rounded bg-black  px-2 py-1'
+        className='text-xl text-gray-300 flex flex-row items-center absolute bottom-4 right-4 bg-opacity-60 rounded bg-black drop-shadow-2xl px-2 py-1'
       >
         <span id="wallet-vp" className='relative top-px'>1775</span>
         <img src="/img/vp_icon.png" alt="" className='w-7 ml-2' />

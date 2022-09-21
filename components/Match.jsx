@@ -9,7 +9,7 @@ export default function Match({ localContent }) {
   return (
     <div 
       id='match'
-      className='group relative items flex flex-row h-20 border-2 p-1.5 mb-2 border-maincolor-lightest rounded hover:bg-maincolor-lightest cursor-default transition-all duration-100 ease-linear' 
+      className='group relative items flex flex-row h-20 border-2 p-1.5 border-maincolor-lightest rounded hover:bg-maincolor-lightest cursor-default transition-all duration-100 ease-linear bg-maincolor-light drop-shadow-2xl' 
     >
       <div className='matchview-gradient-overlay'>
         <div className='absolute top-0 left-3 flex flex-row z-40 w-1/6 h-full items-center'>
