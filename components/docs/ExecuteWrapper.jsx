@@ -64,6 +64,7 @@ export default function ExecuteWrapper({ URL, variables }) {
 							isHeader={variable.isHeader} 
 							isRequired={variable.isRequired}
 							headerName={variable.headerName}
+							key={index}
 						/>
 					)
 				})}
