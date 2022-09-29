@@ -15,6 +15,7 @@ import fs from 'fs';
 import Sparkles from '../components/Sparkles';
 import { motion } from 'framer-motion';
 import AnimationCoverUp from '../components/AnimationCoverUp';
+import Head from 'next/head';
 
 export async function getServerSideProps(context) {
   const UA = context.req.headers['user-agent'];
@@ -123,8 +124,27 @@ export default function Home({ downloadCount, downloadURL, isMobile, localConten
     }
   }, [timerSeconds]);
 
+  const addJsonLd = () => {
+    return {
+      _html: `
+        {
+          "@context": "http://schema.org/",
+          "@type": "Product",
+          "name": "VALTracker",
+          "image": [
+            "https://valtracker.gg/img/VALTracker_Logo_default.png",
+          ],
+          "description": "VALTracker is the only VALORANT Stats Tracker you'll ever need. Download now - it's free on Windows."
+        }
+      `
+    }
+  }
+
   return (
     <>
+      <Head>
+        
+      </Head>
       <SeoHandler 
         title={'VALTracker'} 
         keywords={localContent.seo.keywords} 
@@ -132,11 +152,11 @@ export default function Home({ downloadCount, downloadURL, isMobile, localConten
         locale={localContent.lang} 
       />
       <div className="bg-maincolor-lightest w-full h-screen text-white relative overflow-x-hidden">
-        <Navbar downloadURL={downloadURL} />
+        <header><Navbar downloadURL={downloadURL} /></header>
         <div className="absolute w-full h-full flex items-center z-20 overflow-hidden">
           <video src="./img/Wallpaper.mp4" muted loop autoPlay className="relative w-full h-full object-cover transform scale-150 z-20" />
         </div>
-        <div className="h-full w-full z-20 relative top-0 left-0 bg-black bg-opacity-60">
+        <section className="h-full w-full z-20 relative top-0 left-0 bg-black bg-opacity-60">
           <div className="w-full h-full flex flex-col items-center justify-center relative bottom-16">
             <h1 className='mb-4 text-5xl sm:text-7xl'>VALTracker.gg</h1>
             <p className="content-subheader text-lg sm:text-2xl text-center mb-4">
@@ -190,8 +210,8 @@ export default function Home({ downloadCount, downloadURL, isMobile, localConten
               </div>
             </div>
           </div>
-        </div>
-        <div className='z-10 relative w-full bg-maincolor-light min-h-full flex flex-col items-center px-4'>
+        </section>
+        <section className='z-10 relative w-full bg-maincolor-light min-h-full flex flex-col items-center px-4'>
           <div className='mb-4 pt-4' ref={featuresHeaderRef}>
             <motion.h3 
               initial={{ y: -100, opacity: 0 }}
@@ -429,7 +449,7 @@ export default function Home({ downloadCount, downloadURL, isMobile, localConten
             </div>
           </div>
           <span className='my-8 text-xl text-center'>{localContent.priv_info.desc} <Link href={'/privacy'}>{localContent.priv_info.link_text}</Link>{localContent.priv_info.desc2 === '.' ? '.' : ` ${localContent.priv_info.desc2}`}</span>
-        </div>
+        </section>
         <Footer />
       </div>
     </>
