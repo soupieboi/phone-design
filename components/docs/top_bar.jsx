@@ -1,7 +1,10 @@
 import Link from "next/link"
+import { useRouter } from "next/router"
 
 export default function Topbar({ toggleActive, handleToggle, children }) {
+	const router = useRouter();
 	const topbarClasses = "h-16 bg-maincolor flex flex-row items-center absolute z-40 "
+	
 	return (
 		<div className={toggleActive ? (topbarClasses + "w-full") : (topbarClasses + "w-full sm:w-4/6 xl:w-5/6")}>
 			<div>

@@ -339,7 +339,7 @@ export default function Home({ downloadCount, downloadURL, isMobile, localConten
             initial={{ y: -100, opacity: 0  }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: [0.6, 0.05, -0.01, 0.9], delay: 0.3 }}
-            viewport={{ amount: 0.8, margin: "-2px 0px 0px 0px", once: true }}
+            viewport={{ amount: 1, margin: "-2px 0px 0px 0px", once: true }}
             ref={featureCard3Ref}
           >
             <span className='text-xl'>{localContent.features.item_3.header}</span>
@@ -407,7 +407,7 @@ export default function Home({ downloadCount, downloadURL, isMobile, localConten
                 className={"base2:w-1/2 w-full base2:mb-0 md:h-48 flex flex-col items-center justify-center bg-maincolor-lightest rounded p-2 mr-2 mb-2"}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.3, ease: "linear", delay: 1.4, type: "tween" }}
+                transition={{ duration: 0.3, ease: "linear", delay: 0.8, type: "tween" }}
                 viewport={{ root: otherFeaturesRef.current, margin: "-2px 0px 0px 0px", once: true }} 
               >
                 <div className="flex flex-row items-center text-center justify-center">
@@ -429,7 +429,7 @@ export default function Home({ downloadCount, downloadURL, isMobile, localConten
                 className={"base2:w-1/2 w-full base2:mb-0 md:h-48 flex flex-col items-center justify-center bg-maincolor-lightest rounded p-2"}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.3, ease: "linear", delay: 1.6, type: "tween" }}
+                transition={{ duration: 0.3, ease: "linear", delay: 0.8, type: "tween" }}
                 viewport={{ root: otherFeaturesRef.current, margin: "-2px 0px 0px 0px", once: true }} 
               >
                 <div className="flex flex-row items-center text-center justify-center">
