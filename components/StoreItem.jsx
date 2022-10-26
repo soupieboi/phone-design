@@ -14,7 +14,7 @@ export default function StoreItem({ itemName }) {
           isWishlisted === true ?
           <StarFilled 
             color
-            cls='w-6 h-6 shadow-img opacity-0 group-hover:opacity-100 group-hover:block cursor-pointer transition-all duration-100 ease-linear' 
+            className='w-6 h-6 shadow-img opacity-0 group-hover:opacity-100 group-hover:block cursor-pointer transition-all duration-100 ease-linear' 
             click={() => {
               setIsWishlisted(false);
             }} 
@@ -22,7 +22,7 @@ export default function StoreItem({ itemName }) {
           :
           <Star 
             color
-            cls='w-6 h-6 shadow-img opacity-0 group-hover:opacity-100 group-hover:block cursor-pointer transition-all duration-100 ease-linear'
+            className='w-6 h-6 shadow-img opacity-0 group-hover:opacity-100 group-hover:block cursor-pointer transition-all duration-100 ease-linear'
             click={() => {
               setIsWishlisted(true);
             }} 

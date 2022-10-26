@@ -52,7 +52,7 @@ export default function Match({ localContent }) {
       </div>
       <div id='match-score' className='w-full hidden flex-row items-center mini:flex'>
         <div id='scoreline' className='flex flex-col text-center w-full'>
-          <Sparkles cls={"w-1/2 mx-auto"}>
+          <Sparkles className={"w-1/2 mx-auto"}>
             <span className={'text-xl text-val-blue'}>{localContent.features.item_3.promo_item.victory_text}</span>
           </Sparkles>
           <span className='text-lg'>13 - 0</span>

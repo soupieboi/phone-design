@@ -31,7 +31,7 @@ const generateSparkle = color => {
   return sparkle;
 };
 
-const Sparkles = ({ color = DEFAULT_COLOR, cls, intervalNums, children, ...delegated }) => {
+const Sparkles = ({ color = DEFAULT_COLOR, className, intervalNums, children, ...delegated }) => {
   const [sparkles, setSparkles] = React.useState(() => {
     return range(3).map(() => generateSparkle(color));
   });
@@ -50,7 +50,7 @@ const Sparkles = ({ color = DEFAULT_COLOR, cls, intervalNums, children, ...deleg
     intervalNums ? intervalNums[1] : 450
   );
   return (
-    <span className={"inline-block relative " + cls} {...delegated}>
+    <span className={"inline-block relative " + className} {...delegated}>
       {sparkles.map(sparkle => (
         <Sparkle
           key={sparkle.id}
